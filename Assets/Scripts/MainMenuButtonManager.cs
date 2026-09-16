@@ -67,6 +67,7 @@ public class MainMenuButtonManager : MonoBehaviour
     public void ExitGame()
     {
         PlayOnClickSound();
+        sceneSwitchManager.ExitGame();
     }
 
     void PlayOnClickSound()

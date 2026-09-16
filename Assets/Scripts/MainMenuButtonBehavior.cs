@@ -10,7 +10,7 @@ public class MainMenuButtonBehavior : MonoBehaviour
 
     [SerializeField] private TMP_Text buttonText;
 
-    [SerializeField] private Color hoverColor;
+    [SerializeField] private Color hoverColor = Color.white;
 
     public EventReference uiHoverSound; 
 
@@ -52,6 +52,8 @@ public class MainMenuButtonBehavior : MonoBehaviour
     {
         buttonText.color = originalColor;
     }
+
+
 
 
 

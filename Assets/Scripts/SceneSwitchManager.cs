@@ -13,8 +13,14 @@ public class SceneSwitchManager : MonoBehaviour
         SceneManager.LoadScene("Gameplay");
     }
 
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
-    void ExitGame()
+
+
+    public void ExitGame()
     {
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
