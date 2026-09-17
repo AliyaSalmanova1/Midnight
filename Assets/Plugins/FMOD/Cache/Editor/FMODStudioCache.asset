@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: ../MidnightFMOD/Build/Desktop/MainMenu.bank
   Name: MainMenu
   StudioPath: bank:/MainMenu
-  lastModified: 639251664854956584
+  lastModified: 639251843231717347
   FileSizes:
   - Name: Desktop
     Value: 4569344
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: ../MidnightFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639251664854490989
+  lastModified: 639251843231514848
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 1744
   Exists: 1
 --- !u!114 &-1132259923314299303
 MonoBehaviour:
@@ -120,7 +120,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 4468350845584676107}
   cacheVersion: 131860
-  cacheTime: 639251664854956584
+  cacheTime: 639251843231717347
   SerializableEventsDict:
   - key: event:/Music/MainMenuMusic
     index: 0
@@ -143,10 +143,10 @@ MonoBehaviour:
   Path: ../MidnightFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639251664854495927
+  lastModified: 639251843231522037
   FileSizes:
   - Name: Desktop
-    Value: 932
+    Value: 1152
   Exists: 1
 --- !u!114 &7179928326873000620
 MonoBehaviour:
