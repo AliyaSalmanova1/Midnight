@@ -30,7 +30,7 @@ public class FlyingBehavior : MonoBehaviour
 
     void FixedUpdate()
     {
-        rigidbody2D.linearVelocity = new Vector2(0f, flyInput * flySpeed);
+        rigidbody2D.linearVelocity = new Vector2(0f, flyInput * Time.deltaTime * flySpeed);
     }
 
     void GetFlyInput()

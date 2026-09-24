@@ -5,7 +5,7 @@ public class RainSpawnManager : MonoBehaviour
 
     [SerializeField] GameObject rainDropPrefab;
 
-    
+
     
     void Start()
     {
@@ -16,6 +16,8 @@ public class RainSpawnManager : MonoBehaviour
     {
         
     }
+
+    
 
 
 

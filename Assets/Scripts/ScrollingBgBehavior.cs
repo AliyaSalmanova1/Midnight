@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ScrollingBgBehavior : MonoBehaviour
 {
 
-    [SerializeField] float scrollSpeed = 0.1f;
+    [SerializeField] float scrollSpeed = 1f;
 
     [SerializeField] RawImage rawBgImage;
 
