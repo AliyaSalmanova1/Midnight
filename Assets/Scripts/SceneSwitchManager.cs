@@ -6,7 +6,7 @@ public class SceneSwitchManager : MonoBehaviour
 
     [SerializeField] private string mainmenuScene = "MainMenu";
 
-    [SerializeField] private string gameplayScene = "Gameplay";
+    //[SerializeField] private string gameplayScene = "Gameplay";
     
     public void StartGameplay()
     {
