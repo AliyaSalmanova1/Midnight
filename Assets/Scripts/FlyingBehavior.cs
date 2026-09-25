@@ -8,17 +8,41 @@ using UnityEngine.InputSystem;
 public class FlyingBehavior : MonoBehaviour
 {
 
-    [SerializeField] private InputActionReference flyAction;
+    [SerializeField] private InputActionReference flyVerticalAction;
+
+    [SerializeField] private InputActionReference flyHorizontalAction;
 
     [SerializeField] private Rigidbody2D rigidbody2D;
 
-    float flyInput = 0;
+    private float minX;
+    private float maxX;
+    private float minY;
+    private float maxY;
+
+    float flyVerticalInput = 0;
+    float flyHorizontalInput = 0;
+
+
 
     [SerializeField] private float flySpeed = 3f;
     
     private void OnEnable()
     {
-        flyAction.action.Enable();
+        flyVerticalAction.action.Enable();
+        flyHorizontalAction.action.Enable();
+    }
+
+    private void Start()
+    {
+
+        Vector3 bottomLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
+        Vector3 topRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        
+ 
+        minX = bottomLeft.x;
+        maxX = topRight.x;
+        minY = bottomLeft.y;
+        maxY = topRight.y;
     }
 
     
@@ -30,19 +54,27 @@ public class FlyingBehavior : MonoBehaviour
 
     void FixedUpdate()
     {
-        rigidbody2D.linearVelocity = new Vector2(0f, flyInput * Time.deltaTime * flySpeed);
+        if (transform.position.y > maxY && flyVerticalInput > 0 ||
+        transform.position.y < minY && flyVerticalInput < 0) flyVerticalInput = 0;
+
+        if (transform.position.x > maxX && flyHorizontalInput > 0 ||
+        transform.position.x < minX && flyHorizontalInput < 0) flyHorizontalInput = 0;
+
+        rigidbody2D.linearVelocity = new Vector2(flyHorizontalInput * flySpeed, flyVerticalInput * flySpeed);
     }
 
     void GetFlyInput()
     {
 
-        flyInput = flyAction.action.ReadValue<float>();
+        flyVerticalInput = flyVerticalAction.action.ReadValue<float>();
+        flyHorizontalInput = flyHorizontalAction.action.ReadValue<float>();
+        Debug.Log("flyVerticalInput: " + flyVerticalInput + "flyHorizontalInput: " + flyHorizontalInput);
 
-        Debug.Log("fly input: " + flyInput);
     }
 
     private void OnDisable()
     {
-        flyAction.action.Disable();
+        flyVerticalAction.action.Disable();
+        flyHorizontalAction.action.Disable();
     }
 }

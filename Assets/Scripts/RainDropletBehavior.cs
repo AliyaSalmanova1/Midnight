@@ -32,7 +32,7 @@ public class RainDropletBehavior : MonoBehaviour
 
     void FixedUpdate()
     {
-        rigidbody2D.linearVelocity = new Vector2(-dropMoveLeftSpeed * Time.deltaTime, -dropDownSpeed * Time.deltaTime);
+        rigidbody2D.linearVelocity = new Vector2(-dropMoveLeftSpeed, -dropDownSpeed);
     }
 
 
