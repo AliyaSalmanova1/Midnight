@@ -34,6 +34,7 @@ public class FlyingBehavior : MonoBehaviour
 
     private void Start()
     {
+        
 
         Vector3 bottomLeft = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
         Vector3 topRight = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
@@ -43,6 +44,7 @@ public class FlyingBehavior : MonoBehaviour
         maxX = topRight.x;
         minY = bottomLeft.y;
         maxY = topRight.y;
+
     }
 
     
@@ -68,7 +70,7 @@ public class FlyingBehavior : MonoBehaviour
 
         flyVerticalInput = flyVerticalAction.action.ReadValue<float>();
         flyHorizontalInput = flyHorizontalAction.action.ReadValue<float>();
-        Debug.Log("flyVerticalInput: " + flyVerticalInput + "flyHorizontalInput: " + flyHorizontalInput);
+        
 
     }
 

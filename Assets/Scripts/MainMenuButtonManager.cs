@@ -40,7 +40,7 @@ public class MainMenuButtonManager : MonoBehaviour
     public void StartNewGame()
     {
         PlayOnClickSound();
-        sceneSwitchManager.StartGameplay();
+        sceneSwitchManager.StartInterlude();
     }
 
     public void ContinueGame()

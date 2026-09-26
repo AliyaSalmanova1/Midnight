@@ -159,6 +159,62 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "GirlInterludeMovements",
+            "id": "54fe96a3-24a8-4b5b-921e-40997a7dbb3f",
+            "actions": [
+                {
+                    "name": "GirlWalking",
+                    "type": "Value",
+                    "id": "29633dde-4bf7-4b36-8a5f-468d0221628a",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "fe1922bb-3322-4101-81f7-4876d60ead27",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GirlWalking",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "749cc84e-0916-42a7-b3be-7153c221ea2e",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GirlWalking",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "db38e2c0-43bc-4704-a6b6-cf9992bd4fa1",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GirlWalking",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Empty",
+            "id": "1d81856b-e5d8-4b22-8709-57c2d5b09806",
+            "actions": [],
+            "bindings": []
         }
     ],
     "controlSchemes": []

@@ -6,11 +6,18 @@ public class SceneSwitchManager : MonoBehaviour
 
     [SerializeField] private string mainmenuScene = "MainMenu";
 
-    //[SerializeField] private string gameplayScene = "Gameplay";
+    [SerializeField] private string flyingGameplayScene = "FlyingGameplay";
+
+    [SerializeField] private string interludeScene = "Interlude";
     
-    public void StartGameplay()
+    public void StartInterlude()
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene(interludeScene);
+    }
+
+    public void StartFlyingGameplay()
+    {
+        SceneManager.LoadScene(flyingGameplayScene);
     }
 
     public void GoToMainMenu()

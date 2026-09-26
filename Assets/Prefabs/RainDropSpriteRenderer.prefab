@@ -133,5 +133,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RainDropletBehavior
   rigidbody2D: {fileID: 0}
-  dropDownSpeed: 5
+  dropDownSpeed: 20
   dropMoveLeftSpeed: 10
