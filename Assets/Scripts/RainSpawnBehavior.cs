@@ -5,7 +5,9 @@ public class RainSpawnBehavior : MonoBehaviour
 {
     [SerializeField] GameObject rainDropPrefab;
 
-    [SerializeField] float secondsBetweenRainDrops = 2f;
+    [SerializeField] float secondsBetweenRainDropsMin = 1f;
+
+    [SerializeField] float secondsBetweenRainDropsMax = 3f;
     
     void Start()
     {
@@ -24,8 +26,10 @@ public class RainSpawnBehavior : MonoBehaviour
         while (true)
         {
             GameObject rainDrop = Instantiate(rainDropPrefab, gameObject.transform);
+
+            float randomAmountOfSecs = Random.Range(secondsBetweenRainDropsMin, secondsBetweenRainDropsMax);
      
-            yield return new WaitForSeconds(secondsBetweenRainDrops);
+            yield return new WaitForSeconds(randomAmountOfSecs);
         }
     }
 }

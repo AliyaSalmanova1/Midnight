@@ -44,6 +44,9 @@ TagManager:
   - name: Player
     uniqueID: 1355794151
     locked: 0
+  - name: Rain
+    uniqueID: 3533437727
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []

@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec023fe7c5d2a490aa3fd7cb2e68abf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RainSpawnBehavior
-  rainDropPrefab: {fileID: 2692932873554842474, guid: 8a896b53f20314ca1b4b131d1838cedc, type: 3}
+  rainDropPrefab: {fileID: 2020815292254257461, guid: 411138715d3894a2d99ddae404e0c864, type: 3}
   secondsBetweenRainDrops: 2
