@@ -1,22 +1,38 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 
 public class SceneSwitchManager : MonoBehaviour
 {
 
-    [SerializeField] private string mainmenuScene = "MainMenu";
+    public string mainmenuScene = "MainMenu";
 
-    [SerializeField] private string flyingGameplayScene = "FlyingGameplay";
+    public string flyingGameplayScene = "FlyingGameplay";
 
-    [SerializeField] private string interludeScene = "Interlude";
+    public string interludeScene = "Interludes";
+
+    public FlyingGameplayStarter flyingGameplayStarter;
+
+
+    void Start()
+    {
+        if (flyingGameplayStarter)
+        {
+            flyingGameplayStarter = FindAnyObjectByType<FlyingGameplayStarter>();
+        }
+    }
+
+
     
     public void StartInterlude()
     {
+        Debug.Log("in start interlude");
         SceneManager.LoadScene(interludeScene);
     }
 
     public void StartFlyingGameplay()
     {
+        Debug.Log("in start flying gameplay");
         SceneManager.LoadScene(flyingGameplayScene);
     }
 

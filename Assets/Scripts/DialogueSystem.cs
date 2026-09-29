@@ -23,6 +23,12 @@ public class ItemData
     public string text;
 }
 
+[Serializable]
+public class DialogueGroup
+{
+    public List<ItemData> dialogues = new List<ItemData>();
+}
+
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -36,7 +42,11 @@ public class DialogueSystem : MonoBehaviour
 
 
     int dialogueIndex = 0;
-    [SerializeField] List<ItemData> dialogues = new List<ItemData>();
+
+    [SerializeField]
+    private List<DialogueGroup> dialogueGroups = new List<DialogueGroup>();
+
+
     public float dialogueSwitcherSpeed = 2f;
 
     
@@ -56,19 +66,21 @@ public class DialogueSystem : MonoBehaviour
 
     IEnumerator SwitchDialogueAutomatically()
     {
+
+        int interludeIndex = PlayerPrefs.GetInt("CurrentInterlude");
         
 
-        while (dialogueIndex < dialogues.Count)
+        while (dialogueIndex < dialogueGroups[interludeIndex].dialogues.Count)
         {
             
-            switch (dialogues[dialogueIndex].character)
+            switch (dialogueGroups[interludeIndex].dialogues[dialogueIndex].character)
             {
                 case Character.DAUGHTER: 
-                    daughterDialogueText.text = dialogues[dialogueIndex].text;
+                    daughterDialogueText.text = dialogueGroups[interludeIndex].dialogues[dialogueIndex].text;
                     fatherDialogueText.text = "";
                     break;
                 case Character.FATHER: 
-                    fatherDialogueText.text = dialogues[dialogueIndex].text;
+                    fatherDialogueText.text = dialogueGroups[interludeIndex].dialogues[dialogueIndex].text;
                     daughterDialogueText.text = "";
                     break;
 
@@ -77,7 +89,7 @@ public class DialogueSystem : MonoBehaviour
     
             yield return new WaitForSeconds(dialogueSwitcherSpeed);
 
-            if (dialogueIndex == dialogues.Count)
+            if (dialogueIndex == dialogueGroups[interludeIndex].dialogues.Count)
             {
                 fatherDisappearingBehavior.DestroyFather();
                 daughterDialogueText.text = "";

@@ -7,7 +7,15 @@ public class RainSpawnManager : MonoBehaviour
 
     [SerializeField] List<GameObject> rainSpawners = new List<GameObject>();
 
-    
+    public float initialTime;
+
+    public float currentTime;
+
+    public float levelTime = 10f;
+
+    public LevelManager levelManager;
+
+    public SceneSwitchManager sceneSwitchManager;
     
     void Awake()
     {
@@ -17,9 +25,33 @@ public class RainSpawnManager : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        currentTime = Time.time;
+    }
+
+    
+
+
     void Start()
     {
         StartCoroutine(ActivateRainSpawners());
+
+        
+
+        if (sceneSwitchManager)
+        {
+            sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
+        }
+        if (levelManager)
+        {
+            levelManager = FindAnyObjectByType<LevelManager>();
+        }
+    }
+
+    void Update()
+    {
+
     }
 
     IEnumerator ActivateRainSpawners()
@@ -39,10 +71,7 @@ public class RainSpawnManager : MonoBehaviour
         
     }
 
-    void Update()
-    {
-        
-    }
+    
 
     
 

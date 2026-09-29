@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class FlyingGameplayStarter : MonoBehaviour
@@ -5,12 +6,19 @@ public class FlyingGameplayStarter : MonoBehaviour
 
     public SceneSwitchManager sceneSwitchManager;
 
+    public LevelManager levelManager;
 
+    public event Action OnFlyingLevelStart;
     
 
     void Start()
     {
         sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
+
+        if (!levelManager)
+        {
+            levelManager = FindAnyObjectByType<LevelManager>();
+        }
 
     }
 
@@ -20,8 +28,19 @@ public class FlyingGameplayStarter : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Girl"))
         {
-            Debug.Log("on trigger enter");
-            sceneSwitchManager.StartFlyingGameplay();
+            int currentInterludeIndex = PlayerPrefs.GetInt("CurrentInterlude");
+
+            if (currentInterludeIndex == 3)
+            {
+                sceneSwitchManager.GoToMainMenu();
+            }
+            else
+            {
+                currentInterludeIndex++;
+                PlayerPrefs.SetInt("CurrentInterlude", currentInterludeIndex);
+                sceneSwitchManager.StartFlyingGameplay(); 
+            }
+                
         }
     }
 }

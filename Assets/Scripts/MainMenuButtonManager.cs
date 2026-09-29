@@ -33,6 +33,9 @@ public class MainMenuButtonManager : MonoBehaviour
         DisableAllCanvases();
 
         mainMenuCanvas.SetActive(true);
+
+        PlayerPrefs.SetInt("CurrentLevel", 0);
+        PlayerPrefs.SetInt("CurrentInterlude", 0);
     }
 
 
