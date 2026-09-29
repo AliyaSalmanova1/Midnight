@@ -13,10 +13,25 @@ public class SceneSwitchManager : MonoBehaviour
 
     public FlyingGameplayStarter flyingGameplayStarter;
 
+    public HealthSystem healthSystem;
+
+    void Awake()
+    {
+        if (!healthSystem)
+        {
+            healthSystem = FindAnyObjectByType<HealthSystem>();
+        }
+    }
+
+    void OnEnable()
+    {
+        healthSystem.OnStartLevelOver += StartFlyingGameplay;
+    }
+
 
     void Start()
     {
-        if (flyingGameplayStarter)
+        if (!flyingGameplayStarter)
         {
             flyingGameplayStarter = FindAnyObjectByType<FlyingGameplayStarter>();
         }
@@ -39,6 +54,11 @@ public class SceneSwitchManager : MonoBehaviour
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    void OnDisable()
+    {
+        healthSystem.OnStartLevelOver -= StartFlyingGameplay;
     }
 
 

@@ -39,11 +39,11 @@ public class RainSpawnManager : MonoBehaviour
 
         
 
-        if (sceneSwitchManager)
+        if (!sceneSwitchManager)
         {
             sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
         }
-        if (levelManager)
+        if (!levelManager)
         {
             levelManager = FindAnyObjectByType<LevelManager>();
         }

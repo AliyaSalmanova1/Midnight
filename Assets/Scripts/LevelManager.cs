@@ -21,20 +21,24 @@ public class LevelManager : MonoBehaviour
 
     public WeatherSystemManager weatherSystemManager;
 
+    public HealthSystem healthSystem;
+
+    
     void Start()
     {
-        if (sceneSwitchManager)
+        if (!sceneSwitchManager)
         {
             sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
         }
-        if (weatherSystemManager)
+        if (!weatherSystemManager)
         {
             weatherSystemManager = FindAnyObjectByType<WeatherSystemManager>();
         }
-        if (flyingGameplayStarter)
+        if (!flyingGameplayStarter)
         {
             flyingGameplayStarter = FindAnyObjectByType<FlyingGameplayStarter>();
         }
+        
 
         
 
@@ -58,7 +62,7 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator StartLevelTimeCount()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(30f);
         Debug.Log("in StartLevelTimeCount");
         IncrementLevel();
         sceneSwitchManager.StartInterlude();

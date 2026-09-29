@@ -16,11 +16,11 @@ public class WeatherSystemManager : MonoBehaviour
 
     void Start()
     {
-        if (levelManager)
+        if (!levelManager)
         {
             levelManager = FindAnyObjectByType<LevelManager>();
         }
-        if (flyingGameplayStarter)
+        if (!flyingGameplayStarter)
         {
             flyingGameplayStarter = FindAnyObjectByType<FlyingGameplayStarter>();
         }
