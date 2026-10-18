@@ -172,6 +172,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "OpenPauseMenu",
+                    "type": "Button",
+                    "id": "53b174ad-903d-494b-9e5c-1375ac831b20",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -207,6 +216,17 @@
                     "action": "GirlWalking",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "cdc5ef01-1a6b-4f7f-a2df-65cc123331e6",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenPauseMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

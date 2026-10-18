@@ -41,9 +41,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7767611542449069544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bb98cc8ff5dc4faab320d046a1ba0b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ffbbb44e419843669e21b166c394246, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  windPrefab: {fileID: 2020815292254257461, guid: 8af0fc0847ac84e8ea981b0819aa5e8f, type: 3}
-  secondsBetweenWindMin: 1
-  secondsBetweenWindMax: 3
+  m_EditorClassIdentifier: Assembly-CSharp::TimedWeatherPrefabSpawner
+  prefab: {fileID: 2020815292254257461, guid: 8af0fc0847ac84e8ea981b0819aa5e8f, type: 3}
+  weatherType: 2

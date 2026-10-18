@@ -1,22 +1,13 @@
 using UnityEngine;
-using TMPro;
-using Unity.VisualScripting;
-using FMOD;
 using FMODUnity;
 
 
 public class MainMenuButtonManager : MonoBehaviour
 {
 
-    
-
     public EventReference uiClickSound; 
 
-
-
     [SerializeField] private SceneSwitchManager sceneSwitchManager;
-
-
 
     [SerializeField] private GameObject mainMenuCanvas;
 
@@ -27,18 +18,16 @@ public class MainMenuButtonManager : MonoBehaviour
 
     void Start()
     {
+        if (!sceneSwitchManager)
+        {
+            sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
+        }
 
-        sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
-
-        DisableAllCanvases();
-
-        mainMenuCanvas.SetActive(true);
+        OpenMainMenu();
 
         PlayerPrefs.SetInt("CurrentLevel", 0);
         PlayerPrefs.SetInt("CurrentInterlude", 0);
     }
-
-
 
     public void StartNewGame()
     {
@@ -50,6 +39,12 @@ public class MainMenuButtonManager : MonoBehaviour
     {
         PlayOnClickSound();
         //to write
+    }
+
+    public virtual void OpenMainMenu()
+    {
+        DisableAllCanvases();
+        ClickNewCanvasButton(mainMenuCanvas);
     }
 
     public void ClickNewCanvasButton(GameObject canvasToOpen)
@@ -77,9 +72,6 @@ public class MainMenuButtonManager : MonoBehaviour
     {
         RuntimeManager.PlayOneShot(uiClickSound);
     }
-
-    
-
 
 
 }

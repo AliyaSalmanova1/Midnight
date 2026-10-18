@@ -41,8 +41,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5458448625008768970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec023fe7c5d2a490aa3fd7cb2e68abf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ffbbb44e419843669e21b166c394246, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RainSpawnBehavior
-  rainDropPrefab: {fileID: 2020815292254257461, guid: 411138715d3894a2d99ddae404e0c864, type: 3}
-  secondsBetweenRainDrops: 2
+  m_EditorClassIdentifier: Assembly-CSharp::TimedWeatherPrefabSpawner
+  prefab: {fileID: 2020815292254257461, guid: 411138715d3894a2d99ddae404e0c864, type: 3}
+  weatherType: 0

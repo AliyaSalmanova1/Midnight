@@ -41,9 +41,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 276821955566961674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0f4e9b4005a24ca0983a77ac4f68ad1, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ffbbb44e419843669e21b166c394246, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  lightningStrikePrefab: {fileID: 2020815292254257461, guid: 97c35c8a0ac314c07b0d096c413eef5e, type: 3}
-  secondsBetweenLightningStrikeMin: 1
-  secondsBetweenLightningDropsMax: 3
+  m_EditorClassIdentifier: Assembly-CSharp::TimedWeatherPrefabSpawner
+  prefab: {fileID: 2020815292254257461, guid: 97c35c8a0ac314c07b0d096c413eef5e, type: 3}
+  weatherType: 1

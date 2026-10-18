@@ -1324,9 +1324,6 @@ MonoBehaviour:
   - {fileID: 2118716910}
   - {fileID: 1560662116}
   - {fileID: 1480438285}
-  initialTime: 0
-  currentTime: 0
-  levelTime: 10
   levelManager: {fileID: 1470360262}
   sceneSwitchManager: {fileID: 1470360263}
 --- !u!4 &961767009

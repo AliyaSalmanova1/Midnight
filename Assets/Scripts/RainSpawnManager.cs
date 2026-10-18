@@ -11,7 +11,7 @@ public class RainSpawnManager : MonoBehaviour
 
     public float currentTime;
 
-    public float levelTime = 10f;
+    public float levelTime = 3f;
 
     public LevelManager levelManager;
 

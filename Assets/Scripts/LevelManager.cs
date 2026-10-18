@@ -62,7 +62,7 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator StartLevelTimeCount()
     {
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(5f);
         Debug.Log("in StartLevelTimeCount");
         IncrementLevel();
         sceneSwitchManager.StartInterlude();

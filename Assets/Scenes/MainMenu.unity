@@ -490,7 +490,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 902, y: 464}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172207151
 MonoBehaviour:
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 67570527b35064ac0b1a74444fd389b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f1d7c8a63fe44289bfe0b3e81c79dcc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -564,8 +564,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -257.3, y: -229}
-  m_SizeDelta: {x: 69.409, y: 71}
+  m_AnchoredPosition: {x: -266, y: -244}
+  m_SizeDelta: {x: 140.235, y: 135.109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195225948
 MonoBehaviour:
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 040a531155a2b4260b9c2af0e8f4573d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d3b87c0263bfa40e1b70edb06d3aa801, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -816,7 +816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -415, y: -10}
+  m_AnchoredPosition: {x: -307.72, y: -11}
   m_SizeDelta: {x: 124.7642, y: 165.552}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240514148
@@ -1143,7 +1143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehavior
   buttonText: {fileID: 1999300792}
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
   uiHoverSound:
     Guid:
       Data1: 1253236322
@@ -1151,6 +1150,8 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
+  buttonText: {fileID: 1999300792}
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &356897806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1958,7 +1959,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehavior
   buttonText: {fileID: 929914962}
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
   uiHoverSound:
     Guid:
       Data1: 1253236322
@@ -1966,6 +1966,8 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
+  buttonText: {fileID: 929914962}
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &553054791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2484,10 +2486,10 @@ RectTransform:
   - {fileID: 172207150}
   m_Father: {fileID: 1866330605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &763578070
 GameObject:
@@ -2634,7 +2636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -342, y: -50}
+  m_AnchoredPosition: {x: -361, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &811452420
@@ -2889,7 +2891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehavior
   buttonText: {fileID: 473543701}
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
   uiHoverSound:
     Guid:
       Data1: 1253236322
@@ -2897,6 +2898,8 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
+  buttonText: {fileID: 473543701}
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &852708682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2970,9 +2973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9749d18a4179f4e5c95291898effd353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchManager
-  mainmenuScene: MainMenu
-  flyingGameplayScene: FlyingGameplay
-  interludeScene: Interludes
+  healthSystem: {fileID: 0}
 --- !u!1 &861259198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,7 +3249,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -421, y: -29}
+  m_AnchoredPosition: {x: -461, y: -29}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &878093310
@@ -3637,7 +3638,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuButtonBehavior
   buttonText: {fileID: 1513670138}
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
   uiHoverSound:
     Guid:
       Data1: 1253236322
@@ -3645,6 +3645,8 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
+  buttonText: {fileID: 1513670138}
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &909353172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5075,8 +5077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -78.71, y: -133.42}
-  m_SizeDelta: {x: 114.58, y: 108.16}
+  m_AnchoredPosition: {x: -61.119, y: -152.05}
+  m_SizeDelta: {x: 157.1994, y: 146.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1191914653
 MonoBehaviour:
@@ -5098,7 +5100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4410cf1e5d8424cf6af45164c93f8d67, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9744cda046903483fbff5fd0098ad4c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5444,10 +5446,10 @@ RectTransform:
   - {fileID: 1468109343}
   m_Father: {fileID: 1866330605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1410310828
 GameObject:
@@ -5483,8 +5485,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -186, y: -114}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -164.70439, y: -121.8568}
+  m_SizeDelta: {x: 161.2641, y: 143.2823}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1410310830
 MonoBehaviour:
@@ -5506,7 +5508,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4410cf1e5d8424cf6af45164c93f8d67, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9744cda046903483fbff5fd0098ad4c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5634,7 +5636,6 @@ RectTransform:
   - {fileID: 811452419}
   - {fileID: 240514147}
   - {fileID: 1177490226}
-  - {fileID: 1410310829}
   - {fileID: 1191914652}
   - {fileID: 1531590059}
   - {fileID: 195225947}
@@ -5643,12 +5644,13 @@ RectTransform:
   - {fileID: 259664120}
   - {fileID: 593558958}
   - {fileID: 1628084451}
+  - {fileID: 1410310829}
   m_Father: {fileID: 1396741921}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 902, y: 464}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1468109344
 MonoBehaviour:
@@ -6329,8 +6331,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -336.3, y: -223}
-  m_SizeDelta: {x: 69.409, y: 71}
+  m_AnchoredPosition: {x: -346.2, y: -224}
+  m_SizeDelta: {x: 152.3063, y: 139.6485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531590060
 MonoBehaviour:
@@ -6352,7 +6354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 040a531155a2b4260b9c2af0e8f4573d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d3b87c0263bfa40e1b70edb06d3aa801, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7172,7 +7174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuButtonBehavior
   buttonText: {fileID: 1190191497}
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
   uiHoverSound:
     Guid:
       Data1: 1253236322
@@ -7180,6 +7181,8 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
+  buttonText: {fileID: 1190191497}
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1683295053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7609,7 +7612,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehavior
   buttonText: {fileID: 1156369630}
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
   uiHoverSound:
     Guid:
       Data1: 1253236322
@@ -7617,6 +7619,8 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
+  buttonText: {fileID: 1156369630}
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1791998058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8060,9 +8064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9749d18a4179f4e5c95291898effd353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchManager
-  mainmenuScene: MainMenu
-  flyingGameplayScene: FlyingGameplay
-  interludeScene: Interludes
+  healthSystem: {fileID: 0}
 --- !u!114 &1866330608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8082,7 +8084,7 @@ MonoBehaviour:
       Data3: 671512968
       Data4: -66429882
     Path: event:/SFX/UIClick
-  sceneSwitchManager: {fileID: 0}
+  sceneSwitchManager: {fileID: 1866330607}
   mainMenuCanvas: {fileID: 1396741920}
   volumeCanvas: {fileID: 700564621}
   creditsCanvas: {fileID: 737012264}
@@ -8463,7 +8465,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehavior
   buttonText: {fileID: 861259200}
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
   uiHoverSound:
     Guid:
       Data1: 1253236322
@@ -8471,6 +8472,8 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
+  buttonText: {fileID: 861259200}
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1987223530
 MonoBehaviour:
   m_ObjectHideFlags: 0

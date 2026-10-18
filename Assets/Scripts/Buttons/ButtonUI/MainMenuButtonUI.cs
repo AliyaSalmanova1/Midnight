@@ -5,20 +5,15 @@ using FMOD;
 using FMODUnity;
 
 
-public class MainMenuButtonBehavior : MonoBehaviour
+public class MainMenuButtonBehavior : MenuButtonAbstractUI
 {
 
     [SerializeField] private TMP_Text buttonText;
 
     [SerializeField] private Color hoverColor = Color.white;
 
-    public EventReference uiHoverSound; 
-
     private Color originalColor;
-
-
-
-
+    
 
     void Start()
     {
@@ -26,16 +21,16 @@ public class MainMenuButtonBehavior : MonoBehaviour
 
     }
 
-
-    public void OnHover()
+    public override void OnHover()
     {
         SetToHoverColor();
-        PlayOnHoverSound();
+        base.OnHover();
     }
 
-    public void OnUnhover()
+    public override void OnUnhover()
     {
         SetToOriginalColor();
+        base.OnUnhover();
     }
 
     void SetToHoverColor()
@@ -43,20 +38,9 @@ public class MainMenuButtonBehavior : MonoBehaviour
         buttonText.color = hoverColor;
     }
 
-    void PlayOnHoverSound()
-    {
-        RuntimeManager.PlayOneShot(uiHoverSound);
-    }
-
     void SetToOriginalColor()
     {
         buttonText.color = originalColor;
     }
-
-
-
-
-
-
 
 }
