@@ -243,7 +243,6 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  buttonText: {fileID: 0}
 --- !u!1 &37294752
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,6 +1483,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputActionsController
   playerInput: {fileID: 889495962}
+  girlInterludeMovementsActions: GirlInterludeMovements
+  girlFlyingActions: GirlFlying
+  emptyAction: Empty
 --- !u!4 &348926830
 Transform:
   m_ObjectHideFlags: 0
@@ -2242,7 +2244,6 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
-  buttonText: {fileID: 1251360349}
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &464270816
 MonoBehaviour:
@@ -2431,7 +2432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9749d18a4179f4e5c95291898effd353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchManager
-  healthSystem: {fileID: 0}
 --- !u!1 &493061067
 GameObject:
   m_ObjectHideFlags: 0
@@ -4405,7 +4405,6 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
-  buttonText: {fileID: 763155220}
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1085354793
 MonoBehaviour:
@@ -4955,7 +4954,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c1018e1d6a44aa977a293eb109590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
+  currentLevel: 0
   sceneSwitchManager: {fileID: 487757701}
+  flyingGameplayStarter: {fileID: 0}
+  weatherSystemManager: {fileID: 0}
+  healthSystem: {fileID: 0}
 --- !u!1 &1166676944
 GameObject:
   m_ObjectHideFlags: 0
@@ -6986,7 +6989,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GirlInterludeMovements
   girlMovementAction: {fileID: -5585428538565159, guid: dff3477bca1d0458b84d32a2d10fe801, type: 3}
   rigidbody2D: {fileID: 1586134118}
-  walkSpeed: 10
 --- !u!1 &1628025601
 GameObject:
   m_ObjectHideFlags: 0
@@ -8641,7 +8643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9749d18a4179f4e5c95291898effd353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchManager
-  healthSystem: {fileID: 0}
 --- !u!114 &1971234495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9469,7 +9470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3081638171245893617, guid: 452b099cfeb5748a689e246783d47c88, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1256
+      value: 1059
       objectReference: {fileID: 0}
     - target: {fileID: 3081638171245893617, guid: 452b099cfeb5748a689e246783d47c88, type: 3}
       propertyPath: m_LocalPosition.y

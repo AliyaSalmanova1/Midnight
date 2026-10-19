@@ -3,6 +3,7 @@ using System;
 using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Assets.Scripts;
 
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -15,9 +16,7 @@ public class RainDropletBehavior : MonoBehaviour
 
 
 
-    [SerializeField] private float dropDownSpeed = 3f;
-
-    [SerializeField] private float dropMoveLeftSpeed = 1f;
+    
 
     void Start()
     {
@@ -32,7 +31,7 @@ public class RainDropletBehavior : MonoBehaviour
 
     void FixedUpdate()
     {
-        rigidbody2D.linearVelocity = new Vector2(-dropMoveLeftSpeed, -dropDownSpeed);
+        rigidbody2D.linearVelocity = new Vector2(-Config.dropMoveLeftSpeed, -Config.rainDropFallSpeed);
     }
 
 

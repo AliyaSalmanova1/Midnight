@@ -11,6 +11,8 @@ public class HealthSystem : MonoBehaviour
     public Slider healthSlider;
 
     public event Action OnStartLevelOver;
+
+    public SceneSwitchManager sceneSwitchManager;
     
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,7 +24,8 @@ public class HealthSystem : MonoBehaviour
 
             if (playerHealth <= 0)
             {
-                OnStartLevelOver?.Invoke();
+    
+                sceneSwitchManager.StartFlyingGameplay();
             }
         }
     }

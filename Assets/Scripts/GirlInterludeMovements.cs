@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Assets.Scripts;
 
 
 
@@ -14,11 +15,11 @@ public class GirlInterludeMovements : MonoBehaviour
 
 
 
-    float walkInput = 0;
+    float walkInput;
 
 
 
-    [SerializeField] private float walkSpeed = 3f;
+    
     
     private void OnEnable()
     {
@@ -28,16 +29,16 @@ public class GirlInterludeMovements : MonoBehaviour
 
     void Update()
     {
-        GetFlyInput();
+        GetWalkInput();
     }
 
     void FixedUpdate()
     {
 
-        rigidbody2D.linearVelocity = new Vector2(walkInput * walkSpeed, 0f);
+        rigidbody2D.linearVelocity = new Vector2(walkInput * Config.walkSpeed, 0f);
     }
 
-    void GetFlyInput()
+    void GetWalkInput()
     {
 
         walkInput = girlMovementAction.action.ReadValue<float>();

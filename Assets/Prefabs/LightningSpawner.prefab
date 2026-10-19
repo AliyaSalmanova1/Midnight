@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4664121633662816416}
   - component: {fileID: 3711087485588505929}
+  - component: {fileID: 588111525678487618}
   m_Layer: 0
   m_Name: LightningSpawner
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -400, y: 315, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41,8 +42,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 276821955566961674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ffbbb44e419843669e21b166c394246, type: 3}
+  m_Script: {fileID: 11500000, guid: a0f4e9b4005a24ca0983a77ac4f68ad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimedWeatherPrefabSpawner
-  prefab: {fileID: 2020815292254257461, guid: 97c35c8a0ac314c07b0d096c413eef5e, type: 3}
-  weatherType: 1
+  lightningStrikePrefab: {fileID: 2020815292254257461, guid: 97c35c8a0ac314c07b0d096c413eef5e, type: 3}
+--- !u!114 &588111525678487618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276821955566961674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f22d234922784a908a671bb99b6c8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeatherSpawnBehavior
+  weatherPiecePrefab: {fileID: 2020815292254257461, guid: 97c35c8a0ac314c07b0d096c413eef5e, type: 3}
+  secondsBetweenWeatherPiecesMin: 1
+  secondsBetweenWeatherPiecesMax: 3

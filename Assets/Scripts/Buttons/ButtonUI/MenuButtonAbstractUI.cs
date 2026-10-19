@@ -6,7 +6,7 @@ using FMODUnity;
 public abstract class MenuButtonAbstractUI : MonoBehaviour
 {
 
-    [SerializeField] private TMP_Text buttonText;
+    [SerializeField] public TMP_Text buttonText;
 
 
     public EventReference uiHoverSound; 

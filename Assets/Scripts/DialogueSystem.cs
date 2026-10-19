@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Assets.Scripts;
 
 public enum DialogueState
 {
@@ -47,7 +48,7 @@ public class DialogueSystem : MonoBehaviour
     private List<DialogueGroup> dialogueGroups = new List<DialogueGroup>();
 
 
-    public float dialogueSwitcherSpeed = 2f;
+    
 
     
 
@@ -87,7 +88,7 @@ public class DialogueSystem : MonoBehaviour
             }
             dialogueIndex++;
     
-            yield return new WaitForSeconds(dialogueSwitcherSpeed);
+            yield return new WaitForSeconds(Config.dialogueSwitcherSpeed);
 
             if (dialogueIndex == dialogueGroups[interludeIndex].dialogues.Count)
             {

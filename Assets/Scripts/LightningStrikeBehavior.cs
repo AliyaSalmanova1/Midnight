@@ -4,6 +4,7 @@ using System.Collections;
 using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Assets.Scripts;
 
 
 
@@ -29,14 +30,14 @@ public class LightningStrikeBehavior : MonoBehaviour
     IEnumerator MakeLightningStrike()
     {
 
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(Config.timeBetweenLightningStrikes);
 
         Color tempColor = spriteRenderer.color;
         tempColor.a = 1f;
         spriteRenderer.color = tempColor;
 
 
-        Destroy(gameObject, .2f);
+        Destroy(gameObject, Config.timeToDestroyLightningStrike);
 
     }
 

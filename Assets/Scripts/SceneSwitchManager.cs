@@ -1,64 +1,28 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement; 
+using Assets.Scripts;
+
 
 public class SceneSwitchManager : MonoBehaviour
 {
-
-    public string mainmenuScene = "MainMenu";
-
-    public string flyingGameplayScene = "FlyingGameplay";
-
-    public string interludeScene = "Interludes";
-
-    public FlyingGameplayStarter flyingGameplayStarter;
-
-    public HealthSystem healthSystem;
-
-    void Awake()
-    {
-        if (!healthSystem)
-        {
-            healthSystem = FindAnyObjectByType<HealthSystem>();
-        }
-    }
-
-    void OnEnable()
-    {
-        healthSystem.OnStartLevelOver += StartFlyingGameplay;
-    }
-
-
-    void Start()
-    {
-        if (!flyingGameplayStarter)
-        {
-            flyingGameplayStarter = FindAnyObjectByType<FlyingGameplayStarter>();
-        }
-    }
-
 
     
     public void StartInterlude()
     {
         Debug.Log("in start interlude");
-        SceneManager.LoadScene(interludeScene);
+        SceneManager.LoadScene(Config.interludeScene);
     }
 
     public void StartFlyingGameplay()
     {
         Debug.Log("in start flying gameplay");
-        SceneManager.LoadScene(flyingGameplayScene);
+        SceneManager.LoadScene(Config.flyingGameplayScene);
     }
 
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
-    }
-
-    void OnDisable()
-    {
-        healthSystem.OnStartLevelOver -= StartFlyingGameplay;
+        SceneManager.LoadScene(Config.mainmenuScene);
     }
 
 

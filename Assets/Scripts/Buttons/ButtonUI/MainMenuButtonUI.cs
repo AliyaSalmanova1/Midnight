@@ -8,7 +8,6 @@ using FMODUnity;
 public class MainMenuButtonBehavior : MenuButtonAbstractUI
 {
 
-    [SerializeField] private TMP_Text buttonText;
 
     [SerializeField] private Color hoverColor = Color.white;
 

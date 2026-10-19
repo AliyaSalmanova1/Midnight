@@ -2,6 +2,8 @@ using System.Collections;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Assets.Scripts;
+
 
 public class LevelManager : MonoBehaviour
 {
@@ -9,11 +11,7 @@ public class LevelManager : MonoBehaviour
 
     public int currentLevel = 0;
 
-    int maxLevels = 3;
-
     int currentinterlude = 0;
-
-    int maxInterludes = 4;
 
     public SceneSwitchManager sceneSwitchManager;
 
@@ -42,7 +40,7 @@ public class LevelManager : MonoBehaviour
 
         
 
-        if (SceneManager.GetActiveScene().name == sceneSwitchManager.flyingGameplayScene)
+        if (SceneManager.GetActiveScene().name == Config.flyingGameplayScene)
         {
 
             StartLevelTimeCountCoroutine();
@@ -62,7 +60,7 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator StartLevelTimeCount()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(Config.generalLevelTime);
         Debug.Log("in StartLevelTimeCount");
         IncrementLevel();
         sceneSwitchManager.StartInterlude();

@@ -2,6 +2,7 @@ using System;
 using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Assets.Scripts;
 
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -19,12 +20,12 @@ public class FlyingBehavior : MonoBehaviour
     private float minY;
     private float maxY;
 
-    float flyVerticalInput = 0;
-    float flyHorizontalInput = 0;
+    float flyVerticalInput;
+    float flyHorizontalInput;
 
 
 
-    [SerializeField] private float flySpeed = 3f;
+    
     
     private void OnEnable()
     {
@@ -62,7 +63,7 @@ public class FlyingBehavior : MonoBehaviour
         if (transform.position.x > maxX && flyHorizontalInput > 0 ||
         transform.position.x < minX && flyHorizontalInput < 0) flyHorizontalInput = 0;
 
-        rigidbody2D.linearVelocity = new Vector2(flyHorizontalInput * flySpeed, flyVerticalInput * flySpeed);
+        rigidbody2D.linearVelocity = new Vector2(flyHorizontalInput * Config.flySpeed, flyVerticalInput * Config.flySpeed);
     }
 
     void GetFlyInput()

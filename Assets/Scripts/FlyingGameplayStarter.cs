@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Assets.Scripts;
 
 public class FlyingGameplayStarter : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class FlyingGameplayStarter : MonoBehaviour
     public LevelManager levelManager;
 
     public event Action OnFlyingLevelStart;
+
+
     
 
     void Start()
@@ -30,7 +33,7 @@ public class FlyingGameplayStarter : MonoBehaviour
         {
             int currentInterludeIndex = PlayerPrefs.GetInt("CurrentInterlude");
 
-            if (currentInterludeIndex == 3)
+            if (currentInterludeIndex == Config.maxInterludeIndex)
             {
                 sceneSwitchManager.GoToMainMenu();
             }

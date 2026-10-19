@@ -5,7 +5,7 @@ using TMPro;
 public class PauseMenuButtonUI : MenuButtonAbstractUI
 {
 
-    [SerializeField] private TMP_Text buttonText;
+
 
 
     void Start()
