@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7715676272616434613}
   - component: {fileID: 35033284866521093}
   - component: {fileID: 3790061500941909567}
-  - component: {fileID: 665385510203199186}
   - component: {fileID: 4794222971969699112}
+  - component: {fileID: -6161114422020382820}
   m_Layer: 0
   m_Name: WindSpriteRenderer
   m_TagString: WeatherObstacle
@@ -121,19 +121,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &665385510203199186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2020815292254257461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f242b8e74374241f7b9ed9ca169daffb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  rigidbody2D: {fileID: 0}
 --- !u!61 &4794222971969699112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -180,3 +167,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 19.55, y: 4.8}
   m_EdgeRadius: 0
+--- !u!114 &-6161114422020382820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020815292254257461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22bb6ebfacc024224b516325235166a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeatherBehavior
+  rigidbody2D: {fileID: 0}
+  weatherMoveLeftSpeed: 10
+  weatherDropFallSpeed: 0

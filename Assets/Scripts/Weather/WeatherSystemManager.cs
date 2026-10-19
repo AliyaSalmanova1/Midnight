@@ -9,21 +9,9 @@ public class WeatherSystemManager : MonoBehaviour
 
     public GameObject windSystem;
 
-    public LevelManager levelManager;
-
-    public FlyingGameplayStarter flyingGameplayStarter;
-
 
     void Start()
     {
-        if (!levelManager)
-        {
-            levelManager = FindAnyObjectByType<LevelManager>();
-        }
-        if (!flyingGameplayStarter)
-        {
-            flyingGameplayStarter = FindAnyObjectByType<FlyingGameplayStarter>();
-        }
 
         SetWeatherSystem();
     }
