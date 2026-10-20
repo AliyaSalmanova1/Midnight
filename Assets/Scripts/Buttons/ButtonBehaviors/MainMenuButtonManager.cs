@@ -27,6 +27,7 @@ public class MainMenuButtonManager : MonoBehaviour
 
         PlayerPrefs.SetInt("CurrentLevel", 0);
         PlayerPrefs.SetInt("CurrentInterlude", 0);
+        PlayerPrefs.SetInt("CurrentMiniLevel", 0);
     }
 
     public void StartNewGame()

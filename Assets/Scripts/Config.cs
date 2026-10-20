@@ -7,7 +7,11 @@ namespace Assets.Scripts
         public static int currentInterlude = 0;
         public static int currentLevel = 0;
 
-         public static int maxInterludeIndex = 3;
+        public static int currentMiniLevel = 0;
+
+        public static int maxInterludeIndex = 3;
+
+        public static int maxMiniLevelIndex = 3;
 
         #endregion
 

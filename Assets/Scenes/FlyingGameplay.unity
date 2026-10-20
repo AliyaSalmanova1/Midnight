@@ -2114,8 +2114,6 @@ MonoBehaviour:
   rainSystem: {fileID: 961767007}
   lightningSystem: {fileID: 1298283249}
   windSystem: {fileID: 1973704699}
-  levelManager: {fileID: 1470360262}
-  flyingGameplayStarter: {fileID: 1470360264}
 --- !u!4 &1470360261
 Transform:
   m_ObjectHideFlags: 0
@@ -2147,7 +2145,7 @@ MonoBehaviour:
   sceneSwitchManager: {fileID: 1470360263}
   flyingGameplayStarter: {fileID: 1470360264}
   weatherSystemManager: {fileID: 1470360260}
-  healthSystem: {fileID: 0}
+  healthSystem: {fileID: 1586134119}
 --- !u!114 &1470360263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2407,7 +2405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
   playerHealth: 1
   healthSlider: {fileID: 579560444}
-  sceneSwitchManager: {fileID: 0}
+  sceneSwitchManager: {fileID: 1470360263}
 --- !u!61 &1586134120
 BoxCollider2D:
   m_ObjectHideFlags: 0

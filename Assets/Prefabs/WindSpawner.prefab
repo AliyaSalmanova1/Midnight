@@ -45,5 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeatherSpawnBehavior
   weatherPiecePrefab: {fileID: 2020815292254257461, guid: 8af0fc0847ac84e8ea981b0819aa5e8f, type: 3}
-  secondsBetweenWeatherPiecesMin: 1
-  secondsBetweenWeatherPiecesMax: 3
+  secondsBetweenWeatherPieces:
+  - min: 3
+    max: 5
+  - min: 2
+    max: 4
+  - min: 1
+    max: 3

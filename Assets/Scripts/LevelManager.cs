@@ -53,6 +53,7 @@ public class LevelManager : MonoBehaviour
 
     public void StartLevelTimeCountCoroutine()
     {
+        StopCoroutine(StartLevelTimeCount());
         StartCoroutine(StartLevelTimeCount());
     }
 
@@ -62,9 +63,41 @@ public class LevelManager : MonoBehaviour
     {
         yield return new WaitForSeconds(Config.generalLevelTime);
         Debug.Log("in StartLevelTimeCount");
-        IncrementLevel();
-        sceneSwitchManager.StartInterlude();
+        IncrementMiniLevel();
+        
+        
     }
+
+    public void IncrementMiniLevel()
+    {
+        int miniLevel = PlayerPrefs.GetInt("CurrentMiniLevel");
+
+        miniLevel++;
+
+        Debug.Log("Current Mini Level: " + miniLevel);
+
+        PlayerPrefs.SetInt("CurrentMiniLevel", miniLevel);
+
+        healthSystem.ResetHealth();
+
+        if (miniLevel >= Config.maxMiniLevelIndex)
+        {
+            miniLevel = 0;
+
+            PlayerPrefs.SetInt("CurrentMiniLevel", miniLevel);
+
+            IncrementLevel();
+            sceneSwitchManager.StartInterlude();
+        }
+        else
+        {
+            Debug.Log("Starting next mini level");
+            StartLevelTimeCountCoroutine();
+        }
+
+        
+    }
+
 
     public void IncrementLevel()
     {
