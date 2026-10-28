@@ -4585,75 +4585,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1129659661
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1129659662}
-  - component: {fileID: 1129659663}
-  m_Layer: 0
-  m_Name: DialogueSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1129659662
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129659661}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.21162009, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1737047526}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1129659663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129659661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a94453e660c54e669a9d09da04d73b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
-  inputActionsController: {fileID: 348926829}
-  fatherDisappearingBehavior: {fileID: 1338298833}
-  daughterDialogueText: {fileID: 1369065126}
-  fatherDialogueText: {fileID: 1242296392}
-  dialogueGroups:
-  - dialogues:
-    - character: 0
-      text: interlude 1
-    - character: 1
-      text: interlude 1
-  - dialogues:
-    - character: 0
-      text: interlude 2
-    - character: 1
-      text: interlude 2
-  - dialogues:
-    - character: 0
-      text: interlude 3
-    - character: 1
-      text: interlude 3
-  - dialogues:
-    - character: 0
-      text: interlude 4
-    - character: 1
-      text: interlude 4
 --- !u!1 &1138311823
 GameObject:
   m_ObjectHideFlags: 0
@@ -7678,10 +7609,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1737047526}
   - component: {fileID: 1737047525}
-  - component: {fileID: 1737047527}
   - component: {fileID: 1737047528}
+  - component: {fileID: 1737047529}
+  - component: {fileID: 1737047531}
+  - component: {fileID: 1737047530}
   m_Layer: 0
-  m_Name: DialogueSystemStarter
+  m_Name: DialogueSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7758,23 +7691,9 @@ Transform:
   m_LocalPosition: {x: 22.97, y: -3.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1129659662}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1737047527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737047524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2b367e778504b7e88b824ae153ded9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystemStarter
-  dialogueSystem: {fileID: 1129659661}
 --- !u!61 &1737047528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7821,6 +7740,65 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1737047529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737047524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2b367e778504b7e88b824ae153ded9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueModel
+  dialogueIndex: 0
+  dialogueGroups:
+  - dialogues:
+    - character: 0
+      text: Interlude 1
+    - character: 1
+      text: Interlude 1
+  - dialogues:
+    - character: 0
+      text: Interlude 2
+    - character: 1
+      text: Interlude 2
+  - dialogues:
+    - character: 0
+      text: Interlude 3
+    - character: 1
+      text: Interlude 3
+--- !u!114 &1737047530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737047524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a94453e660c54e669a9d09da04d73b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueController
+  inputActionsController: {fileID: 348926829}
+  fatherDisappearingBehavior: {fileID: 1338298833}
+  dialogueUI: {fileID: 1737047531}
+  dialogueModel: {fileID: 1737047529}
+--- !u!114 &1737047531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737047524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d57f342d5c2044c7a4dfe8b7a72a692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueUI
+  daughterDialogueText: {fileID: 1369065126}
+  fatherDialogueText: {fileID: 1242296392}
 --- !u!1 &1795348298
 GameObject:
   m_ObjectHideFlags: 0

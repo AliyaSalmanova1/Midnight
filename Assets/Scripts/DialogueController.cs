@@ -5,50 +5,20 @@ using UnityEngine;
 using TMPro;
 using Assets.Scripts;
 
-public enum DialogueState
-{
-    AUTO,
-    MANUAL
-}
-
-public enum Character
-{
-    FATHER,
-    DAUGHTER
-    }
-
-[Serializable]
-public class ItemData
-{
-    public Character character;
-    public string text;
-}
-
-[Serializable]
-public class DialogueGroup
-{
-    public List<ItemData> dialogues = new List<ItemData>();
-}
 
 
-public class DialogueSystem : MonoBehaviour
+
+public class DialogueController : MonoBehaviour
 {
 
     public InputActionsController inputActionsController;
     public FatherDisappearingBehavior fatherDisappearingBehavior;
 
-    public TMP_Text daughterDialogueText;
-
-    public TMP_Text fatherDialogueText;
-
-
-    int dialogueIndex = 0;
-
-    [SerializeField]
-    private List<DialogueGroup> dialogueGroups = new List<DialogueGroup>();
-
-
     
+
+    public DialogueUI dialogueUI;
+
+    public DialogueModel dialogueModel;
 
     
 
@@ -57,6 +27,24 @@ public class DialogueSystem : MonoBehaviour
         fatherDisappearingBehavior = FindAnyObjectByType<FatherDisappearingBehavior>();
         inputActionsController = FindAnyObjectByType<InputActionsController>();
 
+
+        if (dialogueUI == null)
+        {
+            dialogueUI = FindAnyObjectByType<DialogueUI>();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Girl"))
+        {
+            StartDialogueCoroutine();
+        }
+    }
+
+
+    void StartDialogueCoroutine()
+    {
         inputActionsController.DisableInputActions();
         StartCoroutine(SwitchDialogueAutomatically());
     }
@@ -71,30 +59,27 @@ public class DialogueSystem : MonoBehaviour
         int interludeIndex = PlayerPrefs.GetInt("CurrentInterlude");
         
 
-        while (dialogueIndex < dialogueGroups[interludeIndex].dialogues.Count)
+        while (dialogueModel.dialogueIndex < dialogueModel.dialogueGroups[interludeIndex].dialogues.Count)
         {
             
-            switch (dialogueGroups[interludeIndex].dialogues[dialogueIndex].character)
+            switch (dialogueModel.dialogueGroups[interludeIndex].dialogues[dialogueModel.dialogueIndex].character)
             {
                 case Character.DAUGHTER: 
-                    daughterDialogueText.text = dialogueGroups[interludeIndex].dialogues[dialogueIndex].text;
-                    fatherDialogueText.text = "";
+                    dialogueUI.ChangeDaughterDialogue(dialogueModel.dialogueGroups[interludeIndex].dialogues[dialogueModel.dialogueIndex].text);
                     break;
                 case Character.FATHER: 
-                    fatherDialogueText.text = dialogueGroups[interludeIndex].dialogues[dialogueIndex].text;
-                    daughterDialogueText.text = "";
+                    dialogueUI.ChangeFatherDialogue(dialogueModel.dialogueGroups[interludeIndex].dialogues[dialogueModel.dialogueIndex].text);
                     break;
 
             }
-            dialogueIndex++;
+            dialogueModel.dialogueIndex++;
     
             yield return new WaitForSeconds(Config.dialogueSwitcherSpeed);
 
-            if (dialogueIndex == dialogueGroups[interludeIndex].dialogues.Count)
+            if (dialogueModel.dialogueIndex == dialogueModel.dialogueGroups[interludeIndex].dialogues.Count)
             {
                 fatherDisappearingBehavior.DestroyFather();
-                daughterDialogueText.text = "";
-                fatherDialogueText.text = "";
+                dialogueUI.ClearDialogue();
                 inputActionsController.EnableGirlInterludeMovements();
                 StopCoroutine(SwitchDialogueAutomatically());
                 
