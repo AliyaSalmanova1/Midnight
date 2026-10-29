@@ -1150,7 +1150,6 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
-  buttonText: {fileID: 1999300792}
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &356897806
 MonoBehaviour:
@@ -1966,7 +1965,6 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
-  buttonText: {fileID: 929914962}
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &553054791
 MonoBehaviour:
@@ -2898,7 +2896,6 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
-  buttonText: {fileID: 473543701}
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &852708682
 MonoBehaviour:
@@ -2973,7 +2970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9749d18a4179f4e5c95291898effd353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchManager
-  healthSystem: {fileID: 0}
 --- !u!1 &861259198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3645,7 +3641,6 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
-  buttonText: {fileID: 1513670138}
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &909353172
 MonoBehaviour:
@@ -7181,7 +7176,6 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
-  buttonText: {fileID: 1190191497}
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1683295053
 MonoBehaviour:
@@ -7619,7 +7613,6 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
-  buttonText: {fileID: 1156369630}
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1791998058
 MonoBehaviour:
@@ -8064,7 +8057,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9749d18a4179f4e5c95291898effd353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchManager
-  healthSystem: {fileID: 0}
 --- !u!114 &1866330608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8472,7 +8464,6 @@ MonoBehaviour:
       Data3: -1200847208
       Data4: -622250712
     Path: event:/SFX/UIHover
-  buttonText: {fileID: 861259200}
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1987223530
 MonoBehaviour:

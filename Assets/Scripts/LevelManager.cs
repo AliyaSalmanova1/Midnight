@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour
 
     public int currentLevel = 0;
 
-    int currentinterlude = 0;
+
 
     public SceneSwitchManager sceneSwitchManager;
 
@@ -21,9 +21,15 @@ public class LevelManager : MonoBehaviour
 
     public HealthSystem healthSystem;
 
+    public LevelUI levelUI;
+
     
     void Start()
     {
+        if (!levelUI)
+        {
+            levelUI = FindAnyObjectByType<LevelUI>();
+        }
         if (!sceneSwitchManager)
         {
             sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
@@ -61,8 +67,11 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator StartLevelTimeCount()
     {
+        levelUI.levelText.text = "Level " + Config.levelNames[PlayerPrefs.GetInt("CurrentLevel")];
+        levelUI.miniLevelText.text = "Mini Level " + (PlayerPrefs.GetInt("CurrentMiniLevel") + 1);
         yield return new WaitForSeconds(Config.generalLevelTime);
         Debug.Log("in StartLevelTimeCount");
+        
         IncrementMiniLevel();
         
         
@@ -91,6 +100,7 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
+
             Debug.Log("Starting next mini level");
             StartLevelTimeCountCoroutine();
         }
@@ -105,13 +115,18 @@ public class LevelManager : MonoBehaviour
 
         level++;
 
+
+
+        levelUI.levelText.text = "Level " + Config.levelNames[level];
+        levelUI.miniLevelText.text = "Mini Level " + PlayerPrefs.GetInt("CurrentMiniLevel");
+
         PlayerPrefs.SetInt("CurrentLevel", level);
     }
 
     public void IncrementInterlude()
     {
-        currentinterlude++;
-        PlayerPrefs.SetInt("CurrentInterlude", currentinterlude);
+        Config.currentInterlude++;
+        PlayerPrefs.SetInt("CurrentInterlude", Config.currentInterlude);
     }
 
 

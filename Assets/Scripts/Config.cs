@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Assets.Scripts
 {
     public static class Config
@@ -12,6 +14,18 @@ namespace Assets.Scripts
         public static int maxInterludeIndex = 3;
 
         public static int maxMiniLevelIndex = 3;
+
+        #endregion
+
+        #region LevelNames
+
+        public static List<string> levelNames = new List<string>()
+        {
+            "Level 1: Sadness",
+            "Level 2: Anger",
+            "Level 3: Anxiety"
+
+        };
 
         #endregion
 
@@ -61,6 +75,7 @@ namespace Assets.Scripts
         public static float secondsBetweenRainDropSpawnerActivation = 1f;
 
         public static float dropMoveLeftSpeed = 1f;
+        
         #endregion
 
         #region Lightning Level
@@ -84,5 +99,3 @@ namespace Assets.Scripts
 
     }
 }
-
-
