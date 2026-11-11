@@ -47,7 +47,7 @@ namespace Assets.Scripts
         #endregion
 
         #region Movement Config
-        public static float flySpeed = 3f;
+        public static float flySpeed = 5f;
 
         public static float walkSpeed = 10f;
 
