@@ -8,14 +8,15 @@ using Assets.Scripts;
 
 
 
-public class LightningStrikeBehavior : MonoBehaviour
+public class LightningMovementBehavior : WeatherMovementBehavior
 {
 
 
     public SpriteRenderer spriteRenderer;
 
-    void Start()
+    public override void Start()
     {
+        base.Start(); 
 
         spriteRenderer = GetComponent<SpriteRenderer>();
 

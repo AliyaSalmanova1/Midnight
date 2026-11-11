@@ -254,7 +254,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainSpawner (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6260075174075961319, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -457,7 +458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.12941177}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1140,7 +1141,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainSpawner (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6260075174075961319, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1437,7 +1439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &961767009
 Transform:
   m_ObjectHideFlags: 0
@@ -1471,9 +1473,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 961767007}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d40cb809ce9ca45ac8a0b14068e85043, type: 3}
+  m_Script: {fileID: 11500000, guid: aea3bbe8c2c704403ac4929ba0a9d70b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeatherSpawnManager
+  m_EditorClassIdentifier: Assembly-CSharp::WeatherSystemManager
   weatherSpawners:
   - {fileID: 680507678}
   - {fileID: 367799466}
@@ -1754,7 +1756,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainSpawner (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6260075174075961319, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2144,7 +2147,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainSpawner (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6260075174075961319, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2225,10 +2229,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1470360261}
-  - component: {fileID: 1470360260}
   - component: {fileID: 1470360262}
   - component: {fileID: 1470360263}
   - component: {fileID: 1470360264}
+  - component: {fileID: 1470360265}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -2236,21 +2240,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1470360260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470360259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aea3bbe8c2c704403ac4929ba0a9d70b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeatherSystemManager
-  rainSystem: {fileID: 961767007}
-  lightningSystem: {fileID: 1298283249}
-  windSystem: {fileID: 1973704699}
 --- !u!4 &1470360261
 Transform:
   m_ObjectHideFlags: 0
@@ -2278,12 +2267,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c1018e1d6a44aa977a293eb109590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
+  miniLevelManager: {fileID: 1470360265}
   currentLevel: 0
   sceneSwitchManager: {fileID: 1470360263}
   flyingGameplayStarter: {fileID: 1470360264}
-  weatherSystemManager: {fileID: 1470360260}
+  weatherSystemManager: {fileID: 961767010}
   healthSystem: {fileID: 1586134119}
-  levelUI: {fileID: 0}
+  levelUI: {fileID: 2005602814}
 --- !u!114 &1470360263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2310,6 +2300,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FlyingGameplayStarter
   sceneSwitchManager: {fileID: 1470360263}
   levelManager: {fileID: 1470360262}
+--- !u!114 &1470360265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470360259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f40996aa26285469ab4532e64727adc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MiniLevelManager
+  levelManager: {fileID: 1470360262}
+  weatherSpawnManager: {fileID: 961767010}
+  healthSystem: {fileID: 1586134119}
+  sceneSwitchManager: {fileID: 1470360263}
+  levelUI: {fileID: 2005602814}
 --- !u!1 &1480438285 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5458448625008768970, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
@@ -2895,7 +2902,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainSpawner (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6260075174075961319, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2960,7 +2968,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainSpawner (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6260075174075961319, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3172,7 +3181,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainSpawner (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6260075174075961319, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3718,7 +3728,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainSpawner (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6260075174075961319, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4158,7 +4169,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainSpawner
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6260075174075961319, guid: 15c00e8915dc44acab60d3eaffb55350, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

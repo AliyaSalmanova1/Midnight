@@ -1,47 +1,90 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 public class WeatherSystemManager : MonoBehaviour
 {
-    public GameObject rainSystem;
-    public GameObject lightningSystem;
-
-    public GameObject windSystem;
 
 
-    void Start()
+
+    [SerializeField] List<GameObject> weatherSpawners = new List<GameObject>();
+
+    [SerializeField] float secondsBetweenWeatherSpawnerActivation = 2f;
+
+    void Awake()
     {
-
-        SetWeatherSystem();
-    }
-
-
-
-    void SetWeatherSystem()
-    {
-        
-        switch (PlayerPrefs.GetInt("CurrentLevel"))
+        foreach (GameObject weatherSpawner in weatherSpawners)
         {
-            case 0:
-                rainSystem.SetActive(true);
-                lightningSystem.SetActive(false);
-                windSystem.SetActive(false);
-                break;
-            case 1:
-                lightningSystem.SetActive(true);
-                rainSystem.SetActive(false);
-                windSystem.SetActive(false);
-                break;
-            case 2:
-                windSystem.SetActive(true);
-                rainSystem.SetActive(false);
-                lightningSystem.SetActive(false);
-                break;
-            default:
-                break;
-
+            weatherSpawner.SetActive(false);
         }
     }
+
+
+    public IEnumerator ActivateWeatherSpawners(float weatherSpawnerActivationInterval,
+        float weatherActionIntervalMin,
+        float weatherActionIntervalMax,
+        float weatherActionLeftSpeed,
+        float weatherActionFallSpeed)
+
+        
+    {
+
+        foreach(Transform child in transform)
+        {
+            weatherSpawners.Add(child.gameObject);
+        }
+
+        while (weatherSpawners.Count > 0)
+        {
+            int randomIndex = Random.Range(0, weatherSpawners.Count);
+
+            weatherSpawners[randomIndex].SetActive(true);
+
+            GameObject weatherSpawnerInstance = weatherSpawners[randomIndex];
+
+            StartCoroutine(weatherSpawnerInstance.GetComponent<WeatherSpawnerBehavior>().SpawnWeatherPiece(
+                weatherActionIntervalMin,
+                weatherActionIntervalMax,
+                weatherActionLeftSpeed,
+                weatherActionFallSpeed,
+                weatherSpawnerActivationInterval,
+                weatherSpawnerInstance));
+
+            weatherSpawners.RemoveAt(randomIndex);
+
+            
+
+            yield return new WaitForSeconds(weatherSpawnerActivationInterval);
+
+            
+        }
+        
+    }
+
+    public IEnumerator DeactivateWeatherSpawners(float weatherSpawnerDeactivationInterval)
+    {
+        Debug.Log("Deactivating weather spawners");
+        StopAllCoroutines();
+ 
+        foreach (Transform child in transform)
+        {
+            child.GetComponent<WeatherSpawnerBehavior>().StopSpawning(); 
+            foreach (Transform grandChild in child)
+            {
+
+                Destroy(grandChild.gameObject);
+            }
+            
+
+            child.gameObject.SetActive(false);
+
+            yield return new WaitForSeconds(weatherSpawnerDeactivationInterval);
+        }
+
+    }
+
+    
     
 }

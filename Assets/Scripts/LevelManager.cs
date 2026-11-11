@@ -7,6 +7,7 @@ using Assets.Scripts;
 
 public class LevelManager : MonoBehaviour
 {
+    public MiniLevelManager miniLevelManager;
 
 
     public int currentLevel = 0;
@@ -49,7 +50,10 @@ public class LevelManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == Config.flyingGameplayScene)
         {
 
-            StartLevelTimeCountCoroutine();
+            StopCoroutine(miniLevelManager.StartMiniLevelTimeCount());
+            levelUI.UpdateLevelUI();
+            PlayerPrefs.SetInt("CurrentMiniLevel", 0);
+            StartCoroutine(miniLevelManager.StartMiniLevelTimeCount());
         }
         Debug.Log(SceneManager.GetActiveScene().name);
         
@@ -57,56 +61,7 @@ public class LevelManager : MonoBehaviour
 
 
 
-    public void StartLevelTimeCountCoroutine()
-    {
-        StopCoroutine(StartLevelTimeCount());
-        StartCoroutine(StartLevelTimeCount());
-    }
 
-
-
-    IEnumerator StartLevelTimeCount()
-    {
-        levelUI.levelText.text = "Level " + Config.levelNames[PlayerPrefs.GetInt("CurrentLevel")];
-        levelUI.miniLevelText.text = "Mini Level " + (PlayerPrefs.GetInt("CurrentMiniLevel") + 1);
-        yield return new WaitForSeconds(Config.generalLevelTime);
-        Debug.Log("in StartLevelTimeCount");
-        
-        IncrementMiniLevel();
-        
-        
-    }
-
-    public void IncrementMiniLevel()
-    {
-        int miniLevel = PlayerPrefs.GetInt("CurrentMiniLevel");
-
-        miniLevel++;
-
-        Debug.Log("Current Mini Level: " + miniLevel);
-
-        PlayerPrefs.SetInt("CurrentMiniLevel", miniLevel);
-
-        healthSystem.ResetHealth();
-
-        if (miniLevel >= Config.maxMiniLevelIndex)
-        {
-            miniLevel = 0;
-
-            PlayerPrefs.SetInt("CurrentMiniLevel", miniLevel);
-
-            IncrementLevel();
-            sceneSwitchManager.StartInterlude();
-        }
-        else
-        {
-
-            Debug.Log("Starting next mini level");
-            StartLevelTimeCountCoroutine();
-        }
-
-        
-    }
 
 
     public void IncrementLevel()
@@ -116,9 +71,8 @@ public class LevelManager : MonoBehaviour
         level++;
 
 
-
-        levelUI.levelText.text = "Level " + Config.levelNames[level];
-        levelUI.miniLevelText.text = "Mini Level " + PlayerPrefs.GetInt("CurrentMiniLevel");
+        levelUI.UpdateLevelUI();
+        
 
         PlayerPrefs.SetInt("CurrentLevel", level);
     }

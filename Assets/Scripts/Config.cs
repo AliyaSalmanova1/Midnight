@@ -67,6 +67,8 @@ namespace Assets.Scripts
         #endregion
 
         #region Rain Level
+
+    
         public static float secondsBetweenRainDropsMin = 1f;
 
         public static float secondsBetweenRainDropsMax = 3f;
@@ -97,5 +99,84 @@ namespace Assets.Scripts
 
         #endregion
 
+    
+
+        #region Level Configuration
+
+        public static List<LevelConfig> levels = new List<LevelConfig>()
+        {
+            new LevelConfig("Level 1: Sadness", new List<MiniLevelConfig>()
+            {
+                new MiniLevelConfig(20f, 10f, 5f, 7f, -1f, -1f, 1f),
+                new MiniLevelConfig(20f, 10f, 2f, 4f, -1f, -1f, 1f),
+                new MiniLevelConfig(35f, 10f, 1f, 3f, -1f, -1f, 1f)
+            }),
+
+            new LevelConfig("Level 2: Anger", new List<MiniLevelConfig>()
+            {
+                new MiniLevelConfig(5f, 10f, 1f, 3f, 1f, 1f, 1f),
+                new MiniLevelConfig(10f, 20f, 1f, 3f, 1f, 1f, 1f),
+                new MiniLevelConfig(15f, 30f, 1f, 3f, 1f, 1f, 1f)
+            }),
+
+            new LevelConfig("Level 3: Anxiety", new List<MiniLevelConfig>()
+            {
+                new MiniLevelConfig(5f, 10f, 1f, 3f, 1f, 1f, 1f),
+                new MiniLevelConfig(10f, 20f, 1f, 3f, 1f, 1f, 1f),
+                new MiniLevelConfig(15f, 30f, 1f, 3f, 1f, 1f, 1f)
+            })
+        };
+        #endregion
+
+
+
     }
+
+
+
+
+    public class MiniLevelConfig
+    {
+        public float duration;
+        public float intervalAfter;
+
+        public float weatherActionIntervalMin;
+
+        public float weatherActionIntervalMax;
+        
+
+        public float weatherActionLeftSpeed;
+
+        public float weatherActionFallSpeed;
+
+        public float weatherSpawnerActivationInterval;
+
+        
+
+        public MiniLevelConfig(float duration, float intervalAfter, float weatherActionIntervalMin, float weatherActionIntervalMax, float weatherActionLeftSpeed, float weatherActionFallSpeed, float weatherSpawnerActivationInterval)
+        {
+            this.duration = duration;
+            this.intervalAfter = intervalAfter;
+            this.weatherActionIntervalMin = weatherActionIntervalMin;
+            this.weatherActionIntervalMax = weatherActionIntervalMax;
+            this.weatherActionLeftSpeed = weatherActionLeftSpeed;
+            this.weatherActionFallSpeed = weatherActionFallSpeed;
+            this.weatherSpawnerActivationInterval = weatherSpawnerActivationInterval;
+        }
+    }
+
+    public class LevelConfig
+    {
+        public string name;
+        public List<MiniLevelConfig> miniLevels;
+
+        public LevelConfig(string name, List<MiniLevelConfig> miniLevels)
+        {
+            this.name = name;
+            this.miniLevels = miniLevels;
+        }
+    }
+
 }
+
+

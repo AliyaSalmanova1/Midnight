@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1276681386403358119}
-  - component: {fileID: 6260075174075961319}
+  - component: {fileID: 2203791868264671118}
   m_Layer: 0
   m_Name: RainSpawner
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6260075174075961319
+--- !u!114 &2203791868264671118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,14 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5458448625008768970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f22d234922784a908a671bb99b6c8c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9132550362d7b43409ceb7657faad93f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeatherSpawnBehavior
+  m_EditorClassIdentifier: Assembly-CSharp::WeatherSpawnerBehavior
   weatherPiecePrefab: {fileID: 2020815292254257461, guid: 411138715d3894a2d99ddae404e0c864, type: 3}
-  secondsBetweenWeatherPieces:
-  - min: 3
-    max: 5
-  - min: 2
-    max: 4
-  - min: 1
-    max: 3
