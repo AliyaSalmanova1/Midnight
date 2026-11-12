@@ -33,7 +33,7 @@ public class FlyingGameplayStarter : MonoBehaviour
         {
             int currentInterludeIndex = PlayerPrefs.GetInt("CurrentInterlude");
 
-            if (currentInterludeIndex == Config.maxInterludeIndex)
+            if (currentInterludeIndex == Config.config.maxInterludeIndex)
             {
                 sceneSwitchManager.GoToMainMenu();
             }

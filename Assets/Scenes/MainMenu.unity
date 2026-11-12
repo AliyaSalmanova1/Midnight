@@ -9118,6 +9118,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067262369}
   m_CullTransparentMesh: 1
+--- !u!1 &2070577492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2070577493}
+  - component: {fileID: 2070577494}
+  m_Layer: 0
+  m_Name: Config
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2070577493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070577492}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.34537, y: 0.37782, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2070577494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070577492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a071fa929d6f448caa127ebd23cecde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfigSingleton
+  currentInterlude: 0
+  currentLevel: 0
+  currentMiniLevel: 0
+  maxInterludeIndex: 3
+  maxMiniLevelIndex: 3
+  levelNames:
+  - 'Level 1: Sadness'
+  - 'Level 2: Anger'
+  - 'Level 3: Anxiety'
+  rainLevelTime: 3
+  generalLevelTime: 5
+  mainmenuScene: MainMenu
+  flyingGameplayScene: FlyingGameplay
+  interludeScene: Interludes
+  flySpeed: 5
+  walkSpeed: 10
+  scrollSpeed: 1
+  secondsBetweenWindMin: 1
+  secondsBetweenWindMax: 3
+  windMoveLeftSpeed: 1
+  secondsBetweenWindSpawnerActivation: 1
+  secondsBetweenRainDropsMin: 1
+  secondsBetweenRainDropsMax: 3
+  rainDropFallSpeed: 1
+  secondsBetweenRainDropSpawnerActivation: 1
+  dropMoveLeftSpeed: 1
+  secondsBetweenLightningStrikeMin: 1
+  secondsBetweenLightningStrikeMax: 3
+  secondsBetweenLightningSpawnerActivation: 1
+  timeBetweenLightningStrikes: 1
+  timeToDestroyLightningStrike: 0.2
+  dialogueSwitcherSpeed: 2
 --- !u!1 &2123096197
 GameObject:
   m_ObjectHideFlags: 0
@@ -9419,3 +9495,4 @@ SceneRoots:
   - {fileID: 1866330605}
   - {fileID: 107355001}
   - {fileID: 1052560369}
+  - {fileID: 2070577493}

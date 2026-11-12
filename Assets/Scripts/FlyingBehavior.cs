@@ -63,7 +63,7 @@ public class FlyingBehavior : MonoBehaviour
         if (transform.position.x > maxX && flyHorizontalInput > 0 ||
         transform.position.x < minX && flyHorizontalInput < 0) flyHorizontalInput = 0;
 
-        rigidbody2D.linearVelocity = new Vector2(flyHorizontalInput * Config.flySpeed, flyVerticalInput * Config.flySpeed);
+        rigidbody2D.linearVelocity = new Vector2(flyHorizontalInput * Config.config.flySpeed, flyVerticalInput * Config.config.flySpeed);
     }
 
     void GetFlyInput()

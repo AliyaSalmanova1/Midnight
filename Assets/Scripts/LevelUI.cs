@@ -16,7 +16,7 @@ public class LevelUI : MonoBehaviour
     public void UpdateLevelUI()
     {
         Debug.Log("Updating level UI");
-        levelText.text = Config.levels[PlayerPrefs.GetInt("CurrentLevel", 0)].name;
+        levelText.text = Config.config.levels[PlayerPrefs.GetInt("CurrentLevel", 0)].name;
     }
     public void UpdateMiniLevelUI()
     {

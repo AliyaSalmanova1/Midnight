@@ -35,7 +35,7 @@ public class GirlInterludeMovements : MonoBehaviour
     void FixedUpdate()
     {
 
-        rigidbody2D.linearVelocity = new Vector2(walkInput * Config.walkSpeed, 0f);
+        rigidbody2D.linearVelocity = new Vector2(walkInput * Config.config.walkSpeed, 0f);
     }
 
     void GetWalkInput()

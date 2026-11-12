@@ -47,7 +47,7 @@ public class LevelManager : MonoBehaviour
 
         
 
-        if (SceneManager.GetActiveScene().name == Config.flyingGameplayScene)
+        if (SceneManager.GetActiveScene().name == Config.config.flyingGameplayScene)
         {
 
             StopCoroutine(miniLevelManager.StartMiniLevelTimeCount());
@@ -79,8 +79,8 @@ public class LevelManager : MonoBehaviour
 
     public void IncrementInterlude()
     {
-        Config.currentInterlude++;
-        PlayerPrefs.SetInt("CurrentInterlude", Config.currentInterlude);
+        Config.config.currentInterlude++;
+        PlayerPrefs.SetInt("CurrentInterlude", Config.config.currentInterlude);
     }
 
 

@@ -74,7 +74,7 @@ public class DialogueController : MonoBehaviour
             }
             dialogueModel.dialogueIndex++;
     
-            yield return new WaitForSeconds(Config.dialogueSwitcherSpeed);
+            yield return new WaitForSeconds(Config.config.dialogueSwitcherSpeed);
 
             if (dialogueModel.dialogueIndex == dialogueModel.dialogueGroups[interludeIndex].dialogues.Count)
             {

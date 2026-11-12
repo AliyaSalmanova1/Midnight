@@ -23,7 +23,7 @@ public class SceneSwitchManager : MonoBehaviour
     public void StartInterlude()
     {
         Debug.Log("in start interlude");
-        fadeInFadeOut.StartCoroutine(fadeInFadeOut.VignetteClose(() => SceneManager.LoadScene(Config.interludeScene)));
+        fadeInFadeOut.StartCoroutine(fadeInFadeOut.VignetteClose(() => SceneManager.LoadScene(Config.config.interludeScene)));
         
     }
 
@@ -31,12 +31,12 @@ public class SceneSwitchManager : MonoBehaviour
     {
         Debug.Log("in start flying gameplay");
 
-        fadeInFadeOut.StartCoroutine(fadeInFadeOut.VignetteClose(() => SceneManager.LoadScene(Config.flyingGameplayScene)));
+        fadeInFadeOut.StartCoroutine(fadeInFadeOut.VignetteClose(() => SceneManager.LoadScene(Config.config.flyingGameplayScene)));
     }
 
     public void GoToMainMenu()
     {
-        fadeInFadeOut.StartCoroutine(fadeInFadeOut.VignetteClose(() => SceneManager.LoadScene(Config.mainmenuScene)));
+        fadeInFadeOut.StartCoroutine(fadeInFadeOut.VignetteClose(() => SceneManager.LoadScene(Config.config.mainmenuScene)));
     }
 
 

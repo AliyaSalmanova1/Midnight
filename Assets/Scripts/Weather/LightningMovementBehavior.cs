@@ -31,14 +31,14 @@ public class LightningMovementBehavior : WeatherMovementBehavior
     IEnumerator MakeLightningStrike()
     {
 
-        yield return new WaitForSeconds(Config.timeBetweenLightningStrikes);
+        yield return new WaitForSeconds(Config.config.timeBetweenLightningStrikes);
 
         Color tempColor = spriteRenderer.color;
         tempColor.a = 1f;
         spriteRenderer.color = tempColor;
 
 
-        Destroy(gameObject, Config.timeToDestroyLightningStrike);
+        Destroy(gameObject, Config.config.timeToDestroyLightningStrike);
 
     }
 
