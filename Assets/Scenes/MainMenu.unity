@@ -8095,6 +8095,7 @@ GameObject:
   - component: {fileID: 1866330602}
   - component: {fileID: 1866330608}
   - component: {fileID: 1866330607}
+  - component: {fileID: 1866330609}
   m_Layer: 5
   m_Name: MainMenuCanvas
   m_TagString: Untagged
@@ -8200,7 +8201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9749d18a4179f4e5c95291898effd353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitchManager
-  fadeInFadeOut: {fileID: 0}
+  fadeInFadeOut: {fileID: 793927922}
 --- !u!114 &1866330608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8224,6 +8225,19 @@ MonoBehaviour:
   mainMenuCanvas: {fileID: 1396741920}
   volumeCanvas: {fileID: 700564621}
   creditsCanvas: {fileID: 737012264}
+  saveSystem: {fileID: 1866330609}
+--- !u!114 &1866330609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866330601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439da919c37b64e4c88d990bbde61508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaveSystem
 --- !u!1 &1918569934
 GameObject:
   m_ObjectHideFlags: 0

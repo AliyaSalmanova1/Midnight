@@ -21,7 +21,7 @@ public class LevelUI : MonoBehaviour
     public void UpdateMiniLevelUI()
     {
         Debug.Log("Updating mini level UI: " + PlayerPrefs.GetInt("CurrentMiniLevel", 1));
-        miniLevelText.text = "Mini level: " + PlayerPrefs.GetInt("CurrentMiniLevel", 1);
+        miniLevelText.text = "Mini level: " + (PlayerPrefs.GetInt("CurrentMiniLevel", 1) + 1);
     }
 
     public void ClearMiniLevelUI(){

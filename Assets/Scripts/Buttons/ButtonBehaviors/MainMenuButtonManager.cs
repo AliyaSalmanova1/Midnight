@@ -15,6 +15,8 @@ public class MainMenuButtonManager : MonoBehaviour
 
     [SerializeField] private GameObject creditsCanvas;
 
+    [SerializeField] private SaveSystem saveSystem;
+
 
     void Start()
     {
@@ -22,24 +24,27 @@ public class MainMenuButtonManager : MonoBehaviour
         {
             sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
         }
+        if (!saveSystem)
+        {
+            saveSystem = FindAnyObjectByType<SaveSystem>();
+        }
 
         OpenMainMenu();
 
-        PlayerPrefs.SetInt("CurrentLevel", 0);
-        PlayerPrefs.SetInt("CurrentInterlude", 0);
-        PlayerPrefs.SetInt("CurrentMiniLevel", 0);
     }
 
     public void StartNewGame()
     {
+        saveSystem.ResetGameStats();
         PlayOnClickSound();
         sceneSwitchManager.StartInterlude();
+        
     }
 
     public void ContinueGame()
     {
         PlayOnClickSound();
-        //to write
+        sceneSwitchManager.StartInterlude();
     }
 
     public virtual void OpenMainMenu()
