@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class InputActionsController : MonoBehaviour
 {
@@ -18,7 +19,13 @@ public class InputActionsController : MonoBehaviour
 
     void Start()
     {
-        playerInput.SwitchCurrentActionMap(girlInterludeMovementsActions);
+        if (SceneManager.GetActiveScene().name == "InterludeScene")
+        {
+            playerInput.SwitchCurrentActionMap(girlInterludeMovementsActions);
+        }else if (SceneManager.GetActiveScene().name == "FlyingScene")
+        {
+            playerInput.SwitchCurrentActionMap(girlFlyingActions);
+        }
     }
 
     public void DisableInputActions()

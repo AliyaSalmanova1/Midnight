@@ -107,9 +107,9 @@ namespace Assets.Scripts
         {
             new LevelConfig("Level 1: Sadness", new List<MiniLevelConfig>()
             {
-                new MiniLevelConfig(20f, 10f, 5f, 7f, -1f, -1f, 1f),
+                new MiniLevelConfig(20f, 10f, 1f, 3f, -1f, -1f, 1f),
                 new MiniLevelConfig(20f, 10f, 2f, 4f, -1f, -1f, 1f),
-                new MiniLevelConfig(35f, 10f, 1f, 3f, -1f, -1f, 1f)
+                new MiniLevelConfig(35f, 10f, 2f, 4f, -1f, -1f, 1f)
             }),
 
             new LevelConfig("Level 2: Anger", new List<MiniLevelConfig>()

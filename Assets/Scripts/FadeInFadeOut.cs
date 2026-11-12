@@ -52,9 +52,25 @@ public class FadeInFadeOut : MonoBehaviour
         
     }
 
+    public IEnumerator VignetteClose(Action callback)
+    {
+        
+        while (vignette.intensity.value < 0.99f)
+        {
+            Debug.Log("Vignette closing: " + vignette.intensity.value);
+            vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, 1f, 0.1f);
+
+            yield return new WaitForSeconds(0f);
+        }
+        callback?.Invoke();
+        
+    }
+
 
     public IEnumerator VignetteOpen()
     {
+        StopCoroutine(VignetteClose());
+        StopCoroutine(VignetteClose(() => { }));
 
         while (vignette.intensity.value > 0.01f)
         {
