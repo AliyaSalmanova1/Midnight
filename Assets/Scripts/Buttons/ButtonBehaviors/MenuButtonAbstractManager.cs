@@ -4,14 +4,14 @@ using FMODUnity;
 
 public class MenuButtonAbstractManager : MonoBehaviour
 {
-    public EventReference uiClickSound; 
+    [SerializeField] protected EventReference uiClickSound; 
 
-    [SerializeField] private SceneSwitchManager sceneSwitchManager;
+    [SerializeField] protected SceneSwitchManager sceneSwitchManager;
 
 
-    [SerializeField] private GameObject volumeCanvas;
+    [SerializeField] protected GameObject volumeCanvas;
 
-    [SerializeField] private GameObject creditsCanvas;
+    [SerializeField] protected GameObject creditsCanvas;
 
 
     void Start()
@@ -22,13 +22,13 @@ public class MenuButtonAbstractManager : MonoBehaviour
         }
     }
 
-    public void StartNewGame()
+    public virtual void StartNewGame()
     {
         PlayOnClickSound();
         sceneSwitchManager.StartInterlude();
     }
 
-    public void ContinueGame()
+    public virtual void ContinueGame()
     {
         PlayOnClickSound();
         //to write
@@ -55,7 +55,7 @@ public class MenuButtonAbstractManager : MonoBehaviour
         sceneSwitchManager.ExitGame();
     }
 
-    void PlayOnClickSound()
+    protected void PlayOnClickSound()
     {
         RuntimeManager.PlayOneShot(uiClickSound);
     }

@@ -58,9 +58,9 @@ public class FadeInFadeOut : MonoBehaviour
         while (vignette.intensity.value < 0.99f)
         {
             Debug.Log("Vignette closing: " + vignette.intensity.value);
-            vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, 1f, 0.1f);
+            vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, 1f, 0.02f);
 
-            yield return new WaitForSeconds(0f);
+            yield return new WaitForSeconds(0.02f);
         }
         callback?.Invoke();
         

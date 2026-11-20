@@ -18,9 +18,9 @@ public class LevelManager : MonoBehaviour
 
     public FlyingGameplayStarter flyingGameplayStarter;
 
-    public WeatherSystemManager weatherSystemManager;
 
-    public HealthSystem healthSystem;
+
+
 
     public LevelUI levelUI;
 
@@ -35,10 +35,7 @@ public class LevelManager : MonoBehaviour
         {
             sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
         }
-        if (!weatherSystemManager)
-        {
-            weatherSystemManager = FindAnyObjectByType<WeatherSystemManager>();
-        }
+
         if (!flyingGameplayStarter)
         {
             flyingGameplayStarter = FindAnyObjectByType<FlyingGameplayStarter>();
@@ -52,7 +49,7 @@ public class LevelManager : MonoBehaviour
 
             StopCoroutine(miniLevelManager.StartMiniLevelTimeCount());
             levelUI.UpdateLevelUI();
-            PlayerPrefs.SetInt("CurrentMiniLevel", 0);
+          
             StartCoroutine(miniLevelManager.StartMiniLevelTimeCount());
         }
         Debug.Log(SceneManager.GetActiveScene().name);

@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 using Assets.Scripts;
@@ -15,7 +15,7 @@ public class SceneSwitchManager : MonoBehaviour
     {
         if (fadeInFadeOut == null)
         {
-            fadeInFadeOut = FindObjectOfType<FadeInFadeOut>();
+            fadeInFadeOut = FindAnyObjectByType<FadeInFadeOut>();
         }
     }
 

@@ -17,6 +17,16 @@ public class HealthSystem : MonoBehaviour
 
     public PlayerFallBehavior playerFallBehavior;
     
+
+    public MiniLevelManager miniLevelManager;
+
+    void Start()
+    {
+        if (!miniLevelManager)
+        {
+            miniLevelManager = FindAnyObjectByType<MiniLevelManager>();
+        }
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("WeatherObstacle"))
@@ -28,9 +38,14 @@ public class HealthSystem : MonoBehaviour
             if (playerHealth <= 0)
             {
 
+
+                //miniLevelManager.StopAllMiniLevelCoroutines();
+
   
                 playerFallBehavior.StartPlayerFall(() =>
                 {
+
+                    PlayerPrefs.SetInt("CurrentMiniLevel", PlayerPrefs.GetInt("CurrentMiniLevel") - 1);
                     sceneSwitchManager.StartFlyingGameplay();
                 });
             }

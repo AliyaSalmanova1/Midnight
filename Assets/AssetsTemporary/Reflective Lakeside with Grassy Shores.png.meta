@@ -1,0 +1,1456 @@
+fileFormatVersion: 2
+guid: 1f703aee83352476582f490258027c31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8856033877124039604
+    second: Reflective Lakeside with Grassy Shores_0
+  - first:
+      213: -1506685615761559020
+    second: Reflective Lakeside with Grassy Shores_1
+  - first:
+      213: 21042331263999615
+    second: Reflective Lakeside with Grassy Shores_2
+  - first:
+      213: -7515908697053231066
+    second: Reflective Lakeside with Grassy Shores_3
+  - first:
+      213: 637507821913887802
+    second: Reflective Lakeside with Grassy Shores_4
+  - first:
+      213: 3649978858354624988
+    second: Reflective Lakeside with Grassy Shores_5
+  - first:
+      213: 846306191342751491
+    second: Reflective Lakeside with Grassy Shores_6
+  - first:
+      213: -3786600719600138931
+    second: Reflective Lakeside with Grassy Shores_7
+  - first:
+      213: -2803212008030870090
+    second: Reflective Lakeside with Grassy Shores_8
+  - first:
+      213: -3608976171397113103
+    second: Reflective Lakeside with Grassy Shores_9
+  - first:
+      213: 8058137134826364701
+    second: Reflective Lakeside with Grassy Shores_10
+  - first:
+      213: 3708297996319045054
+    second: Reflective Lakeside with Grassy Shores_11
+  - first:
+      213: 653070970889470427
+    second: Reflective Lakeside with Grassy Shores_12
+  - first:
+      213: -108302412117294277
+    second: Reflective Lakeside with Grassy Shores_13
+  - first:
+      213: 333783412577394027
+    second: Reflective Lakeside with Grassy Shores_14
+  - first:
+      213: -3896124590439561168
+    second: Reflective Lakeside with Grassy Shores_15
+  - first:
+      213: -501166532173277988
+    second: Reflective Lakeside with Grassy Shores_16
+  - first:
+      213: 8691355926048970643
+    second: Reflective Lakeside with Grassy Shores_17
+  - first:
+      213: 5138597371193078885
+    second: Reflective Lakeside with Grassy Shores_18
+  - first:
+      213: 8046997891599337901
+    second: Reflective Lakeside with Grassy Shores_19
+  - first:
+      213: 7013132978247626714
+    second: Reflective Lakeside with Grassy Shores_20
+  - first:
+      213: 938070829335556732
+    second: Reflective Lakeside with Grassy Shores_21
+  - first:
+      213: -7294612274681126439
+    second: Reflective Lakeside with Grassy Shores_22
+  - first:
+      213: -388651327810688238
+    second: Reflective Lakeside with Grassy Shores_23
+  - first:
+      213: -4356435048498781161
+    second: Reflective Lakeside with Grassy Shores_24
+  - first:
+      213: -4463897284374297842
+    second: Reflective Lakeside with Grassy Shores_25
+  - first:
+      213: 1128664811347318438
+    second: Reflective Lakeside with Grassy Shores_26
+  - first:
+      213: 3047077669528187548
+    second: Reflective Lakeside with Grassy Shores_27
+  - first:
+      213: -1302209369257710340
+    second: Reflective Lakeside with Grassy Shores_28
+  - first:
+      213: 3433901310623979424
+    second: Reflective Lakeside with Grassy Shores_29
+  - first:
+      213: 2548970890048548945
+    second: Reflective Lakeside with Grassy Shores_30
+  - first:
+      213: -3886565051839494812
+    second: Reflective Lakeside with Grassy Shores_31
+  - first:
+      213: -6329901326082916328
+    second: Reflective Lakeside with Grassy Shores_32
+  - first:
+      213: -343516572029304532
+    second: Reflective Lakeside with Grassy Shores_33
+  - first:
+      213: -3692808185497427040
+    second: Reflective Lakeside with Grassy Shores_34
+  - first:
+      213: 3613033535386860006
+    second: Reflective Lakeside with Grassy Shores_35
+  - first:
+      213: -6397358167962102591
+    second: Reflective Lakeside with Grassy Shores_36
+  - first:
+      213: 9207098064903546040
+    second: Reflective Lakeside with Grassy Shores_37
+  - first:
+      213: 2061855675455521558
+    second: Reflective Lakeside with Grassy Shores_38
+  - first:
+      213: 4284107783733436726
+    second: Reflective Lakeside with Grassy Shores_39
+  - first:
+      213: 7322284807758530503
+    second: Reflective Lakeside with Grassy Shores_40
+  - first:
+      213: 2148310626303338746
+    second: Reflective Lakeside with Grassy Shores_41
+  - first:
+      213: -2469345898389158707
+    second: Reflective Lakeside with Grassy Shores_42
+  - first:
+      213: -563722577725280990
+    second: Reflective Lakeside with Grassy Shores_43
+  - first:
+      213: 5254614949578069922
+    second: Reflective Lakeside with Grassy Shores_44
+  - first:
+      213: 9171814332424116488
+    second: Reflective Lakeside with Grassy Shores_45
+  - first:
+      213: 1753836162999281125
+    second: Reflective Lakeside with Grassy Shores_46
+  - first:
+      213: 2710187384958571151
+    second: Reflective Lakeside with Grassy Shores_47
+  - first:
+      213: 7752470735157335537
+    second: Reflective Lakeside with Grassy Shores_48
+  - first:
+      213: -7464501257529201674
+    second: Reflective Lakeside with Grassy Shores_49
+  - first:
+      213: -1956189091117643527
+    second: Reflective Lakeside with Grassy Shores_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 548
+        width: 138
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c323b2c1c091580800000000000000
+      internalID: -8856033877124039604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_1
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 543
+        width: 57
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412775c4a6d271be0800000000000000
+      internalID: -1506685615761559020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_2
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 453
+        width: 216
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e9c3883e1ca4000800000000000000
+      internalID: 21042331263999615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_3
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 624
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6288fdb6cd022b790800000000000000
+      internalID: -7515908697053231066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_4
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 427
+        width: 605
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34d5b28cf1e8d800800000000000000
+      internalID: 637507821913887802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_5
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 598
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9c9e9ee6457a230800000000000000
+      internalID: 3649978858354624988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_6
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 603
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fc2324ffeaebb00800000000000000
+      internalID: 846306191342751491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_7
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 583
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45cef135ba437bc0800000000000000
+      internalID: -3786600719600138931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_8
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 599
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5e53fd78df819d0800000000000000
+      internalID: -2803212008030870090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 421
+        width: 246
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa96051b475aedc0800000000000000
+      internalID: -3608976171397113103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_10
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 569
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f95b0c70144df60800000000000000
+      internalID: 8058137134826364701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_11
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 559
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5b3e75165867330800000000000000
+      internalID: 3708297996319045054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 577
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd18cf0869c201900800000000000000
+      internalID: 653070970889470427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_13
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 534
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b334e6da78b3f7ef0800000000000000
+      internalID: -108302412117294277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_14
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 494
+        width: 58
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dd79ace36d1a400800000000000000
+      internalID: 333783412577394027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_15
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 438
+        width: 160
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0388f2ad35f2ee9c0800000000000000
+      internalID: -3896124590439561168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_16
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 548
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd45f7cb1bf7b09f0800000000000000
+      internalID: -501166532173277988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_17
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 494
+        width: 78
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39792ac7a26ed9870800000000000000
+      internalID: 8691355926048970643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_18
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 540
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56438b96517ff4740800000000000000
+      internalID: 5138597371193078885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 508
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9881592fdacaf60800000000000000
+      internalID: 8046997891599337901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_20
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 502
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfe60b5947a35160800000000000000
+      internalID: 7013132978247626714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_21
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 524
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72b3bcf272b40d00800000000000000
+      internalID: 938070829335556732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_22
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 517
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d16d61e8c454ca90800000000000000
+      internalID: -7294612274681126439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_23
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 510
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b2c503dab3b9af0800000000000000
+      internalID: -388651327810688238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_24
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 502
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7142b2f9765da83c0800000000000000
+      internalID: -4356435048498781161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_25
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 461
+        width: 68
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e030a03121d0d02c0800000000000000
+      internalID: -4463897284374297842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_26
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 500
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a617de7aa2d9af00800000000000000
+      internalID: 1128664811347318438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_27
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 510
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92b04f0ff4694a20800000000000000
+      internalID: 3047077669528187548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_28
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 500
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc65326a7f9dede0800000000000000
+      internalID: -1302209369257710340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_29
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 506
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a79d756c0ba7af20800000000000000
+      internalID: 3433901310623979424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_30
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 467
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150b72cf483cf5320800000000000000
+      internalID: 2548970890048548945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_31
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 472
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465c8a06da5201ac0800000000000000
+      internalID: -3886565051839494812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_32
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 461
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810cd8bf74ca728a0800000000000000
+      internalID: -6329901326082916328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_33
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 478
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21cbbd6f759b3bf0800000000000000
+      internalID: -343516572029304532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_34
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 492
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a365c7458280ccc0800000000000000
+      internalID: -3692808185497427040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_35
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 492
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9be469bd2142230800000000000000
+      internalID: 3613033535386860006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_36
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 475
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4dca114a40837a0800000000000000
+      internalID: -6397358167962102591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_37
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 469
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b423c2a8ee26cf70800000000000000
+      internalID: 9207098064903546040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_38
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 474
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61346a900de2d9c10800000000000000
+      internalID: 2061855675455521558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_39
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 465
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631eae4c455347b30800000000000000
+      internalID: 4284107783733436726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_40
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 461
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7cfaecc3bfd9560800000000000000
+      internalID: 7322284807758530503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_41
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 455
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8e104e12550dd10800000000000000
+      internalID: 2148310626303338746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_42
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 463
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc442f21dfe1bbdd0800000000000000
+      internalID: -2469345898389158707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_43
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 453
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d21d26d414d28f0800000000000000
+      internalID: -563722577725280990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_44
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 435
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7de0dd4742ce840800000000000000
+      internalID: 5254614949578069922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_45
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 445
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809d9fd7a84d84f70800000000000000
+      internalID: 9171814332424116488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_46
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 444
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e56ec1b2b0e65810800000000000000
+      internalID: 1753836162999281125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1671
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82533341158c9520800000000000000
+      internalID: 2710187384958571151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_48
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 422
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f51aac2f0f469b60800000000000000
+      internalID: 7752470735157335537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_49
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 425
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbe387a7a3c86890800000000000000
+      internalID: -7464501257529201674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reflective Lakeside with Grassy Shores_50
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 423
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8407ec2683ad4e0800000000000000
+      internalID: -1956189091117643527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Reflective Lakeside with Grassy Shores_0: -8856033877124039604
+      Reflective Lakeside with Grassy Shores_1: -1506685615761559020
+      Reflective Lakeside with Grassy Shores_10: 8058137134826364701
+      Reflective Lakeside with Grassy Shores_11: 3708297996319045054
+      Reflective Lakeside with Grassy Shores_12: 653070970889470427
+      Reflective Lakeside with Grassy Shores_13: -108302412117294277
+      Reflective Lakeside with Grassy Shores_14: 333783412577394027
+      Reflective Lakeside with Grassy Shores_15: -3896124590439561168
+      Reflective Lakeside with Grassy Shores_16: -501166532173277988
+      Reflective Lakeside with Grassy Shores_17: 8691355926048970643
+      Reflective Lakeside with Grassy Shores_18: 5138597371193078885
+      Reflective Lakeside with Grassy Shores_19: 8046997891599337901
+      Reflective Lakeside with Grassy Shores_2: 21042331263999615
+      Reflective Lakeside with Grassy Shores_20: 7013132978247626714
+      Reflective Lakeside with Grassy Shores_21: 938070829335556732
+      Reflective Lakeside with Grassy Shores_22: -7294612274681126439
+      Reflective Lakeside with Grassy Shores_23: -388651327810688238
+      Reflective Lakeside with Grassy Shores_24: -4356435048498781161
+      Reflective Lakeside with Grassy Shores_25: -4463897284374297842
+      Reflective Lakeside with Grassy Shores_26: 1128664811347318438
+      Reflective Lakeside with Grassy Shores_27: 3047077669528187548
+      Reflective Lakeside with Grassy Shores_28: -1302209369257710340
+      Reflective Lakeside with Grassy Shores_29: 3433901310623979424
+      Reflective Lakeside with Grassy Shores_3: -7515908697053231066
+      Reflective Lakeside with Grassy Shores_30: 2548970890048548945
+      Reflective Lakeside with Grassy Shores_31: -3886565051839494812
+      Reflective Lakeside with Grassy Shores_32: -6329901326082916328
+      Reflective Lakeside with Grassy Shores_33: -343516572029304532
+      Reflective Lakeside with Grassy Shores_34: -3692808185497427040
+      Reflective Lakeside with Grassy Shores_35: 3613033535386860006
+      Reflective Lakeside with Grassy Shores_36: -6397358167962102591
+      Reflective Lakeside with Grassy Shores_37: 9207098064903546040
+      Reflective Lakeside with Grassy Shores_38: 2061855675455521558
+      Reflective Lakeside with Grassy Shores_39: 4284107783733436726
+      Reflective Lakeside with Grassy Shores_4: 637507821913887802
+      Reflective Lakeside with Grassy Shores_40: 7322284807758530503
+      Reflective Lakeside with Grassy Shores_41: 2148310626303338746
+      Reflective Lakeside with Grassy Shores_42: -2469345898389158707
+      Reflective Lakeside with Grassy Shores_43: -563722577725280990
+      Reflective Lakeside with Grassy Shores_44: 5254614949578069922
+      Reflective Lakeside with Grassy Shores_45: 9171814332424116488
+      Reflective Lakeside with Grassy Shores_46: 1753836162999281125
+      Reflective Lakeside with Grassy Shores_47: 2710187384958571151
+      Reflective Lakeside with Grassy Shores_48: 7752470735157335537
+      Reflective Lakeside with Grassy Shores_49: -7464501257529201674
+      Reflective Lakeside with Grassy Shores_5: 3649978858354624988
+      Reflective Lakeside with Grassy Shores_50: -1956189091117643527
+      Reflective Lakeside with Grassy Shores_6: 846306191342751491
+      Reflective Lakeside with Grassy Shores_7: -3786600719600138931
+      Reflective Lakeside with Grassy Shores_8: -2803212008030870090
+      Reflective Lakeside with Grassy Shores_9: -3608976171397113103
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

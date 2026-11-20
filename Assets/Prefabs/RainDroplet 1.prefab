@@ -84,7 +84,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4392284864958128783}
-  - component: {fileID: 7270415006274228760}
   - component: {fileID: 4588689730768051873}
   m_Layer: 0
   m_Name: RainDroplet 1
@@ -109,21 +108,6 @@ Transform:
   - {fileID: 6373796744238709402}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}
---- !u!114 &7270415006274228760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2692932873554842474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8039234e821140b9a9449bc3f3d400a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  rigidbody2D: {fileID: 0}
-  dropDownSpeed: 10000
-  dropMoveLeftSpeed: 1000
 --- !u!50 &4588689730768051873
 Rigidbody2D:
   serializedVersion: 5

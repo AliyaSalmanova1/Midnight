@@ -49,10 +49,10 @@ public class MiniLevelManager : MonoBehaviour
     public IEnumerator StartMiniLevelBreakTimeCount()
     {
         
-        yield return StartCoroutine(weatherSpawnManager.DeactivateWeatherSpawners(Config.config.levels[PlayerPrefs.GetInt("CurrentLevel", 1)].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel", 1)].weatherSpawnerActivationInterval));
+        yield return StartCoroutine(weatherSpawnManager.DeactivateWeatherSpawners(Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].weatherSpawnerActivationInterval));
         levelUI.ClearMiniLevelUI();
         healthSystem.StartCoroutine(healthSystem.SlideHealthBarToMax());
-        yield return new WaitForSeconds(Config.config.levels[PlayerPrefs.GetInt("CurrentLevel", 1)].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel", 1)].intervalAfter);
+        yield return new WaitForSeconds(Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].intervalAfter);
         
         
         StopCoroutine(StartMiniLevelTimeCount());
@@ -83,5 +83,10 @@ public class MiniLevelManager : MonoBehaviour
         IncrementMiniLevel();
         
         
+    }
+
+    public void StopAllMiniLevelCoroutines()
+    {
+        StopAllCoroutines();
     }
 }

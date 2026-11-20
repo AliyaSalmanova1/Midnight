@@ -2,20 +2,19 @@ using UnityEngine;
 using FMODUnity;
 
 
-public class MainMenuButtonManager : MonoBehaviour
+public class MainMenuButtonManager : MenuButtonAbstractManager
 {
 
-    public EventReference uiClickSound; 
 
-    [SerializeField] private SceneSwitchManager sceneSwitchManager;
 
-    [SerializeField] private GameObject mainMenuCanvas;
 
-    [SerializeField] private GameObject volumeCanvas;
+    [SerializeField] protected GameObject mainMenuCanvas;
 
-    [SerializeField] private GameObject creditsCanvas;
 
-    [SerializeField] private SaveSystem saveSystem;
+
+
+
+    [SerializeField] protected SaveSystem saveSystem;
 
 
     void Start()
@@ -33,7 +32,7 @@ public class MainMenuButtonManager : MonoBehaviour
 
     }
 
-    public void StartNewGame()
+    public override void StartNewGame()
     {
         saveSystem.ResetGameStats();
         PlayOnClickSound();
@@ -41,7 +40,7 @@ public class MainMenuButtonManager : MonoBehaviour
         
     }
 
-    public void ContinueGame()
+    public override void ContinueGame()
     {
         PlayOnClickSound();
         sceneSwitchManager.StartInterlude();
@@ -53,7 +52,7 @@ public class MainMenuButtonManager : MonoBehaviour
         ClickNewCanvasButton(mainMenuCanvas);
     }
 
-    public void ClickNewCanvasButton(GameObject canvasToOpen)
+    public override void ClickNewCanvasButton(GameObject canvasToOpen)
     {
         PlayOnClickSound();
         DisableAllCanvases();
@@ -61,7 +60,7 @@ public class MainMenuButtonManager : MonoBehaviour
         
     }
 
-    void DisableAllCanvases()
+    public override void DisableAllCanvases()
     {
         mainMenuCanvas.SetActive(false);
         volumeCanvas.SetActive(false);
@@ -74,7 +73,7 @@ public class MainMenuButtonManager : MonoBehaviour
         sceneSwitchManager.ExitGame();
     }
 
-    void PlayOnClickSound()
+    protected void PlayOnClickSound()
     {
         RuntimeManager.PlayOneShot(uiClickSound);
     }

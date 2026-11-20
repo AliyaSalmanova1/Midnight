@@ -5,7 +5,6 @@ using FMODUnity;
 public class PauseMenuButtonManager : MenuButtonAbstractManager
 {
 
-    [SerializeField] private SceneSwitchManager sceneSwitchManager;
 
     [SerializeField] private GameObject pauseMenuCanvas;
 
