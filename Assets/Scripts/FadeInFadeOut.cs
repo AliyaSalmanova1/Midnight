@@ -13,7 +13,8 @@ public class FadeInFadeOut : MonoBehaviour
     
     public Volume volume; 
 
-
+    private float elapsedTime = 0f;
+    private float duration = 0.5f;
 
     Vignette vignette;
 
@@ -33,6 +34,8 @@ public class FadeInFadeOut : MonoBehaviour
 
     public void CloseVignette()
     {
+        elapsedTime = 0f;
+        StopAllCoroutines();
         StartCoroutine(VignetteClose());
 
         
@@ -41,44 +44,68 @@ public class FadeInFadeOut : MonoBehaviour
     public IEnumerator VignetteClose()
     {
         
-        while (vignette.intensity.value < 0.99f)
+        vignette.intensity.overrideState = true;
+        vignette.active = true;
+        elapsedTime = 0f;
+        vignette.intensity.value = 0f;
+
+        while (elapsedTime < duration)
         {
             Debug.Log("Vignette closing: " + vignette.intensity.value);
-            vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, 1f, 0.01f);
+            elapsedTime += Time.deltaTime;
+            vignette.intensity.value = Mathf.Lerp(0f, 1f, Mathf.Clamp01(elapsedTime / duration));
 
             yield return null;
         }
+        vignette.intensity.value = 1f;
 
         
     }
 
     public IEnumerator VignetteClose(Action callback)
     {
-        
-        while (vignette.intensity.value < 0.99f)
+        vignette.intensity.overrideState = true;
+        vignette.active = true;
+        elapsedTime = 0f;
+        vignette.intensity.value = 0f;
+
+        while (elapsedTime < duration)
         {
             Debug.Log("Vignette closing: " + vignette.intensity.value);
-            vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, 1f, 0.02f);
+            elapsedTime += Time.deltaTime;
+            vignette.intensity.value = Mathf.Lerp(0f, 1f, Mathf.Clamp01(elapsedTime / duration));
 
-            yield return new WaitForSeconds(0.02f);
+            yield return null;
         }
+        vignette.intensity.value = 1f;
+
         callback?.Invoke();
+
         
     }
 
 
     public IEnumerator VignetteOpen()
     {
-        StopCoroutine(VignetteClose());
-        StopCoroutine(VignetteClose(() => { }));
 
-        while (vignette.intensity.value > 0.01f)
+        // Stopping a freshly created IEnumerator does nothing, so stop everything instead
+        //StopAllCoroutines();
+
+        vignette.intensity.overrideState = true;
+        vignette.active = true;
+        elapsedTime = 0f;
+        vignette.intensity.value = 1f;
+
+        while (elapsedTime < duration)
         {
+            elapsedTime += Time.deltaTime;
 
             Debug.Log("Vignette opening: " + vignette.intensity.value);
-            vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, 0f, 0.1f);
-            yield return new WaitForSeconds(0.1f);
+            vignette.intensity.value = Mathf.Lerp(1f, 0f, Mathf.Clamp01(elapsedTime / duration));
+            yield return null;
         }
+
+        vignette.intensity.value = 0f;
 
     }
 }
