@@ -13,6 +13,7 @@ public class ConfigSingleton : MonoBehaviour
 
     public static ConfigSingleton instance;
 
+
     void Awake()
     {
         if (instance == null)
@@ -125,20 +126,23 @@ public class ConfigSingleton : MonoBehaviour
 
     #region Level Configuration
 
+
+
+    [SerializeField]
     public  List<LevelConfig> levels = new List<LevelConfig>()
     {
         new LevelConfig("Level 1: Sadness", new List<MiniLevelConfig>()
         {
-            new MiniLevelConfig(20f, 4f, 2f, 4f, -1f, -1f, 1f),
-            new MiniLevelConfig(20f, 4f, 1f, 3f, -1f, -1f, 1f),
-            new MiniLevelConfig(35f, 4f, 2f, 4f, -1f, -1f, 1f)
+            new MiniLevelConfig(20f, 4f, 2f, 4f, 10f, 4f, 1f),
+            new MiniLevelConfig(20f, 4f, 1f, 3f, 10f, 4f, 1f),
+            new MiniLevelConfig(35f, 4f, 2f, 4f, 10f, 4f, 1f)
         }),
 
         new LevelConfig("Level 2: Anxiety", new List<MiniLevelConfig>()
         {
-            new MiniLevelConfig(5f, 4f, 1f, 3f, 1f, 1f, 1f),
-            new MiniLevelConfig(10f, 4f, 1f, 3f, 1f, 1f, 1f),
-            new MiniLevelConfig(15f, 4f, 1f, 3f, 1f, 1f, 1f)
+            new MiniLevelConfig(5f, 4f, 1f, 3f, 5f, 1f, 1f),
+            new MiniLevelConfig(10f, 4f, 1f, 3f, -5f, -1f, 1f),
+            new MiniLevelConfig(15f, 4f, 1f, 3f, -5f, -1f, 1f)
         }),
 
         new LevelConfig("Level 3: Anger", new List<MiniLevelConfig>()
@@ -154,9 +158,17 @@ public class ConfigSingleton : MonoBehaviour
 
 }
 
+[System.Serializable]
+public class WeatherSystemManagers
+{
+    public WeatherSystemManager rainWeatherSystemManager;
+    public WeatherSystemManager windWeatherSystemManager;
+    public WeatherSystemManager lightningWeatherSystemManager;
+}
 
 
 
+[System.Serializable]
 public class MiniLevelConfig
 {
     public float duration;
@@ -187,15 +199,18 @@ public class MiniLevelConfig
     }
 }
 
+[System.Serializable]
 public class LevelConfig
 {
     public string name;
+
     public List<MiniLevelConfig> miniLevels;
 
     public LevelConfig(string name, List<MiniLevelConfig> miniLevels)
     {
         this.name = name;
         this.miniLevels = miniLevels;
+
     }
 }
 

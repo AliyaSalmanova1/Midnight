@@ -8,12 +8,37 @@ using Assets.Scripts;
 public class MiniLevelManager : MonoBehaviour
 {
     public LevelManager levelManager;
-    public WeatherSystemManager weatherSpawnManager;
+
 
     public HealthSystem healthSystem;
     public SceneSwitchManager sceneSwitchManager;
 
+    public WeatherSystemConfig weatherSystemConfig;
+
     public LevelUI levelUI;
+
+    void Start()
+    {
+        if (!levelManager)
+        {
+            levelManager = FindAnyObjectByType<LevelManager>();
+        }
+
+        if (!sceneSwitchManager)
+        {
+            sceneSwitchManager = FindAnyObjectByType<SceneSwitchManager>();
+        }
+
+        if (!weatherSystemConfig)
+        {
+            weatherSystemConfig = FindAnyObjectByType<WeatherSystemConfig>();
+        }
+
+        if (!levelUI)
+        {
+            levelUI = FindAnyObjectByType<LevelUI>();
+        }
+    }
 
     public void IncrementMiniLevel()
     {
@@ -47,7 +72,7 @@ public class MiniLevelManager : MonoBehaviour
     public IEnumerator StartMiniLevelBreakTimeCount()
     {
         
-        yield return StartCoroutine(weatherSpawnManager.DeactivateWeatherSpawners(Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].weatherSpawnerActivationInterval));
+        yield return StartCoroutine(weatherSystemConfig.weatherSystemManagers[PlayerPrefs.GetInt("CurrentLevel", 0)].DeactivateWeatherSpawners(Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].weatherSpawnerActivationInterval));
         levelUI.ClearMiniLevelUI();
         healthSystem.StartCoroutine(healthSystem.SlideHealthBarToMax());
         yield return new WaitForSeconds(Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].intervalAfter);
@@ -69,7 +94,7 @@ public class MiniLevelManager : MonoBehaviour
         float weatherActionLeftSpeed = Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].weatherActionLeftSpeed;
         float weatherActionFallSpeed = Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].weatherActionFallSpeed;
         float weatherSpawnerActivationInterval = Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].weatherSpawnerActivationInterval;   
-        StartCoroutine(weatherSpawnManager.ActivateWeatherSpawners(
+        StartCoroutine(weatherSystemConfig.weatherSystemManagers[PlayerPrefs.GetInt("CurrentLevel", 0)].GetComponent<WeatherSystemManager>().ActivateWeatherSpawners(
             weatherSpawnerActivationInterval,
             weatherActionIntervalMin,
             weatherActionIntervalMax,

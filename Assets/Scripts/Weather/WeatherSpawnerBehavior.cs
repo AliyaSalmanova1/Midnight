@@ -23,6 +23,10 @@ public class WeatherSpawnerBehavior : MonoBehaviour
             int currentMiniLevel = PlayerPrefs.GetInt("CurrentMiniLevel");
 
             float randomAmountOfSecs = Random.Range(weatherActionIntervalMin, weatherActionIntervalMax);
+
+            WeatherMovementBehavior moveWeatherAction = rainDrop.GetComponent<WeatherMovementBehavior>();
+
+            StartCoroutine(moveWeatherAction.MoveWeatherAction(weatherActionLeftSpeed, weatherActionFallSpeed));
      
             yield return new WaitForSeconds(randomAmountOfSecs);
         }

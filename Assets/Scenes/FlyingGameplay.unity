@@ -2442,9 +2442,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniLevelManager
   levelManager: {fileID: 1470360262}
-  weatherSpawnManager: {fileID: 961767010}
   healthSystem: {fileID: 1586134119}
   sceneSwitchManager: {fileID: 1470360263}
+  weatherSystemConfig: {fileID: 1800869899}
   levelUI: {fileID: 2005602814}
 --- !u!1 &1480438285 stripped
 GameObject:
@@ -2512,6 +2512,76 @@ MonoBehaviour:
   timeBetweenLightningStrikes: 1
   timeToDestroyLightningStrike: 0.2
   dialogueSwitcherSpeed: 2
+  levels:
+  - name: 'Level 1: Sadness'
+    miniLevels:
+    - duration: 20
+      intervalAfter: 4
+      weatherActionIntervalMin: 2
+      weatherActionIntervalMax: 4
+      weatherActionLeftSpeed: 0
+      weatherActionFallSpeed: -5
+      weatherSpawnerActivationInterval: 1
+    - duration: 20
+      intervalAfter: 4
+      weatherActionIntervalMin: 1
+      weatherActionIntervalMax: 3
+      weatherActionLeftSpeed: 0
+      weatherActionFallSpeed: -5
+      weatherSpawnerActivationInterval: 1
+    - duration: 35
+      intervalAfter: 4
+      weatherActionIntervalMin: 2
+      weatherActionIntervalMax: 4
+      weatherActionLeftSpeed: 0
+      weatherActionFallSpeed: -5
+      weatherSpawnerActivationInterval: 1
+  - name: 'Level 2: Anxiety'
+    miniLevels:
+    - duration: 5
+      intervalAfter: 4
+      weatherActionIntervalMin: 1
+      weatherActionIntervalMax: 3
+      weatherActionLeftSpeed: -5
+      weatherActionFallSpeed: 0
+      weatherSpawnerActivationInterval: 1
+    - duration: 10
+      intervalAfter: 4
+      weatherActionIntervalMin: 1
+      weatherActionIntervalMax: 3
+      weatherActionLeftSpeed: -5
+      weatherActionFallSpeed: 0
+      weatherSpawnerActivationInterval: 1
+    - duration: 15
+      intervalAfter: 4
+      weatherActionIntervalMin: 1
+      weatherActionIntervalMax: 3
+      weatherActionLeftSpeed: -5
+      weatherActionFallSpeed: 0
+      weatherSpawnerActivationInterval: 1
+  - name: 'Level 3: Anger'
+    miniLevels:
+    - duration: 5
+      intervalAfter: 4
+      weatherActionIntervalMin: 1
+      weatherActionIntervalMax: 3
+      weatherActionLeftSpeed: 0
+      weatherActionFallSpeed: 0
+      weatherSpawnerActivationInterval: 1
+    - duration: 10
+      intervalAfter: 4
+      weatherActionIntervalMin: 1
+      weatherActionIntervalMax: 3
+      weatherActionLeftSpeed: 0
+      weatherActionFallSpeed: 0
+      weatherSpawnerActivationInterval: 1
+    - duration: 15
+      intervalAfter: 4
+      weatherActionIntervalMin: 1
+      weatherActionIntervalMax: 3
+      weatherActionLeftSpeed: 0
+      weatherActionFallSpeed: 0
+      weatherSpawnerActivationInterval: 1
 --- !u!4 &1484627616
 Transform:
   m_ObjectHideFlags: 0
@@ -3345,6 +3415,54 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 276821955566961674, guid: 38aadbb40638b486c9cd761453fb35f9, type: 3}
   m_PrefabInstance: {fileID: 1786164915}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1800869898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800869900}
+  - component: {fileID: 1800869899}
+  m_Layer: 0
+  m_Name: WeatherConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1800869899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800869898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3113e063be0ae404288fceacf164f8f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeatherSystemConfigSingleton
+  weatherSystemManagers:
+  - {fileID: 961767010}
+  - {fileID: 1973704701}
+  - {fileID: 1298283251}
+--- !u!4 &1800869900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800869898}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.20944, y: -4.74424, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1812321869
 GameObject:
   m_ObjectHideFlags: 0
@@ -4530,3 +4648,4 @@ SceneRoots:
   - {fileID: 889495963}
   - {fileID: 544792363}
   - {fileID: 1484627616}
+  - {fileID: 1800869900}

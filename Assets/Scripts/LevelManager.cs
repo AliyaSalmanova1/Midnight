@@ -49,6 +49,18 @@ public class LevelManager : MonoBehaviour
 
             StopCoroutine(miniLevelManager.StartMiniLevelTimeCount());
             levelUI.UpdateLevelUI();
+
+            WeatherSystemConfig weatherSystemConfig = FindAnyObjectByType<WeatherSystemConfig>();
+
+            foreach (var manager in weatherSystemConfig.weatherSystemManagers)
+            {
+                manager.gameObject.SetActive(false);
+            }
+
+            weatherSystemConfig.weatherSystemManagers[PlayerPrefs.GetInt("CurrentLevel", 0)].gameObject.SetActive(true);
+
+
+
           
             StartCoroutine(miniLevelManager.StartMiniLevelTimeCount());
         }
@@ -64,6 +76,8 @@ public class LevelManager : MonoBehaviour
     public void IncrementLevel()
     {
         int level = PlayerPrefs.GetInt("CurrentLevel");
+
+        
 
         level++;
 
