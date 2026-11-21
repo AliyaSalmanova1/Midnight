@@ -129,23 +129,23 @@ public class ConfigSingleton : MonoBehaviour
     {
         new LevelConfig("Level 1: Sadness", new List<MiniLevelConfig>()
         {
-            new MiniLevelConfig(20f, 10f, 2f, 4f, -1f, -1f, 1f),
-            new MiniLevelConfig(20f, 10f, 1f, 3f, -1f, -1f, 1f),
-            new MiniLevelConfig(35f, 10f, 2f, 4f, -1f, -1f, 1f)
+            new MiniLevelConfig(20f, 4f, 2f, 4f, -1f, -1f, 1f),
+            new MiniLevelConfig(20f, 4f, 1f, 3f, -1f, -1f, 1f),
+            new MiniLevelConfig(35f, 4f, 2f, 4f, -1f, -1f, 1f)
         }),
 
-        new LevelConfig("Level 2: Anger", new List<MiniLevelConfig>()
+        new LevelConfig("Level 2: Anxiety", new List<MiniLevelConfig>()
         {
-            new MiniLevelConfig(5f, 10f, 1f, 3f, 1f, 1f, 1f),
-            new MiniLevelConfig(10f, 20f, 1f, 3f, 1f, 1f, 1f),
-            new MiniLevelConfig(15f, 30f, 1f, 3f, 1f, 1f, 1f)
+            new MiniLevelConfig(5f, 4f, 1f, 3f, 1f, 1f, 1f),
+            new MiniLevelConfig(10f, 4f, 1f, 3f, 1f, 1f, 1f),
+            new MiniLevelConfig(15f, 4f, 1f, 3f, 1f, 1f, 1f)
         }),
 
-        new LevelConfig("Level 3: Anxiety", new List<MiniLevelConfig>()
+        new LevelConfig("Level 3: Anger", new List<MiniLevelConfig>()
         {
-            new MiniLevelConfig(5f, 10f, 1f, 3f, 1f, 1f, 1f),
-            new MiniLevelConfig(10f, 20f, 1f, 3f, 1f, 1f, 1f),
-            new MiniLevelConfig(15f, 30f, 1f, 3f, 1f, 1f, 1f)
+            new MiniLevelConfig(5f, 4f, 1f, 3f, 1f, 1f, 1f),
+            new MiniLevelConfig(10f, 4f, 1f, 3f, 1f, 1f, 1f),
+            new MiniLevelConfig(15f, 4f, 1f, 3f, 1f, 1f, 1f)
         })
     };
     #endregion

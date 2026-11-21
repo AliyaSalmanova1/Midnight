@@ -21,7 +21,7 @@ public class MiniLevelManager : MonoBehaviour
 
         LevelConfig currentLevel = Config.config.levels[PlayerPrefs.GetInt("CurrentLevel", 0)];
 
-        if (miniLevel >= currentLevel.miniLevels.Count)
+        if (miniLevel >= currentLevel.miniLevels.Count - 1)
         {
             miniLevel = 0;
 
@@ -38,9 +38,7 @@ public class MiniLevelManager : MonoBehaviour
         PlayerPrefs.SetInt("CurrentMiniLevel", miniLevel);
 
 
-
-
-        StartCoroutine(StartMiniLevelBreakTimeCount());
+        StartCoroutine(StartMiniLevelTimeCount());
         
         
         
@@ -55,8 +53,7 @@ public class MiniLevelManager : MonoBehaviour
         yield return new WaitForSeconds(Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].intervalAfter);
         
         
-        StopCoroutine(StartMiniLevelTimeCount());
-        StartCoroutine(StartMiniLevelTimeCount());
+        IncrementMiniLevel();
         
         
     }
@@ -80,7 +77,7 @@ public class MiniLevelManager : MonoBehaviour
             weatherActionFallSpeed));
         yield return new WaitForSeconds(Config.config.levels[PlayerPrefs.GetInt("CurrentLevel")].miniLevels[PlayerPrefs.GetInt("CurrentMiniLevel")].duration);
         
-        IncrementMiniLevel();
+        StartCoroutine(StartMiniLevelBreakTimeCount());
         
         
     }

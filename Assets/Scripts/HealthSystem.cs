@@ -45,7 +45,7 @@ public class HealthSystem : MonoBehaviour
                 playerFallBehavior.StartPlayerFall(() =>
                 {
 
-                    PlayerPrefs.SetInt("CurrentMiniLevel", PlayerPrefs.GetInt("CurrentMiniLevel") - 1);
+                    
                     sceneSwitchManager.StartFlyingGameplay();
                 });
             }

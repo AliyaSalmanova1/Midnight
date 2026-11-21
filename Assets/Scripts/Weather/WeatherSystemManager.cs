@@ -67,13 +67,16 @@ public class WeatherSystemManager : MonoBehaviour
     {
         Debug.Log("Deactivating weather spawners");
         StopAllCoroutines();
- 
-        foreach (Transform child in transform)
-        {
-            child.GetComponent<WeatherSpawnerBehavior>().StopSpawning(); 
-            foreach (Transform grandChild in child)
-            {
 
+        
+ 
+        for (int i = transform.childCount - 1; i >= 0; i--)
+        {
+            Transform child = transform.GetChild(i);
+            child.GetComponent<WeatherSpawnerBehavior>().StopSpawning(); 
+            for (int j = child.childCount - 1; j >= 0; j--)
+            {
+                Transform grandChild = child.GetChild(j);
                 Destroy(grandChild.gameObject);
             }
             
