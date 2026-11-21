@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Assets.Scripts;
 
 
 
@@ -60,9 +61,13 @@ public class HealthSystem : MonoBehaviour
 
     public IEnumerator SlideHealthBarToMax()
     {
-        while (healthSlider.value < 1f)
+        float time = Config.config.levels[Config.config.currentLevel].miniLevels[Config.config.currentMiniLevel].intervalAfter;
+
+        float elapsedTime = 0f;
+        while (elapsedTime < time)
         {
-            healthSlider.value += sliderUpwardMovementSpeed * Time.deltaTime;
+            healthSlider.value += Mathf.Lerp(healthSlider.value, 1f, sliderUpwardMovementSpeed * Time.deltaTime);
+            elapsedTime += Time.deltaTime;
             yield return null;
         }
         ResetHealth();
